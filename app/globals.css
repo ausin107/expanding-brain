@@ -6,3 +6,9 @@
   -webkit-clip-path: polygon(20px 0, 100% 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 0 50%);
   clip-path: polygon(20px 0, 100% 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 0 50%);
 }
+.drop-shadow-btn {
+  filter: drop-shadow(0px 0px 14px #fcfc0355);
+}
+.drop-shadow-btn:hover {
+  filter: drop-shadow(0px 0px 14px #ffffff55);
+}
