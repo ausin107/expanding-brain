@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Geom Graphic W03 Regular';
+  src: url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.eot');
+  src: url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.eot?#iefix') format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.woff2') format('woff2'),
+    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.woff') format('woff'),
+    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.ttf') format('truetype'),
+    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.svg#Geom Graphic W03 Regular') format('svg');
+}
+body {
+  font-family: 'Geom Graphic W03 Regular';
+}
 .button-clipPath {
   -webkit-clip-path: polygon(20px 0, 100% 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 0 50%);
   clip-path: polygon(20px 0, 100% 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 0 50%);
@@ -11,4 +23,11 @@
 }
 .drop-shadow-btn:hover {
   filter: drop-shadow(0px 0px 14px #ffffff55);
+}
+
+.icon:hover {
+  fill: #fcfdc7;
+}
+.icon-path:hover {
+  stroke: #ffffff;
 }

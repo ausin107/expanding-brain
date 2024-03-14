@@ -1,17 +1,20 @@
 import React from 'react'
 import Button from './Button'
+import { ClassNameValue, twMerge } from 'tailwind-merge'
 
 type inviteBoxProps = {
   title?: string
   subTitle?: string
+  className?: ClassNameValue
 }
 
 function InviteBox({
   title = 'MAINNET AIRDROP',
   subTitle = 'Enter your invite code to claim your airdrop',
+  className,
 }: inviteBoxProps) {
   return (
-    <div className='flex flex-col items-center'>
+    <div className={twMerge('flex flex-col items-center', className)}>
       <h3 className='text-lg text-primary font-bold mb-7'>{title}</h3>
       <p className='text-secondary font-semibold w-4/5 text-center mb-7'>{subTitle}</p>
       <div className='flex flex-row mb-10'>
