@@ -13,7 +13,7 @@ export default function Home() {
             <h2 className='xl:text-[42px] lg:text-4xl font-semibold text-secondary mb-10 tracking-wide'>
               The L2 that helps you earn more ETH
             </h2>
-            <p className='text-[#D7E0CC] font-medium text-xl mb-10'>
+            <p className='text-[#D7E0CC] font-semibold text-xl mb-10'>
               The only Ethereum L2 with native yield for ETH and stablecoins. Mainnet now live.
             </p>
             <Button className='font-bold'>BRIDGE & EARN</Button>

@@ -17,6 +17,7 @@ const config: Config = {
         secondary: '#FCFDC7',
         third: '#9BA885',
         light: '#C3D4A5',
+        camo: '#75835D',
       },
     },
   },
