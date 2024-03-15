@@ -1,8 +1,7 @@
 'use client'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import Button from './Button'
 import { ClassNameValue, twMerge } from 'tailwind-merge'
-import { log } from 'console'
 
 type inviteBoxProps = {
   title?: string
@@ -16,19 +15,22 @@ function InviteBox({
   className,
 }: inviteBoxProps) {
   const inputRefs = useRef<HTMLInputElement[] | null[]>([])
-  const handleChange = (index: number) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>, index: number) => {
     const inputValue = inputRefs.current[index]?.value
     if (inputValue?.length == 1) inputRefs.current[index + 1]?.focus()
   }
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>, index: number) => {
-    const inputValue = inputRefs.current[index]?.value
-
     if (event.keyCode == 37) {
       event.preventDefault()
       inputRefs.current[index - 1]?.focus()
       inputRefs.current[index - 1]?.setSelectionRange(1, 1)
     } else if (event.keyCode == 39) {
       inputRefs.current[index + 1]?.focus()
+    }
+  }
+  const handleKeyUp = (event: React.KeyboardEvent<HTMLInputElement>, index: number) => {
+    if (event.keyCode == 8) {
+      inputRefs.current[index - 1]?.focus()
     }
   }
   return (
@@ -41,8 +43,9 @@ function InviteBox({
         <div className='relative flex justify-center mr-2'>
           <input
             ref={(e) => (inputRefs.current[0] = e)}
-            onChange={() => handleChange(0)}
+            onChange={(e) => handleChange(e, 0)}
             onKeyDown={(event) => handleKeyDown(event, 0)}
+            onKeyUp={(event) => handleKeyUp(event, 0)}
             maxLength={1}
             className='py-3 px-2 text-center border-third border-2 rounded-xl bg-transparent md:w-12 text-2xl text-secondary uppercase outline-none'
           />
@@ -51,8 +54,9 @@ function InviteBox({
         <div className='relative flex justify-center mr-2'>
           <input
             ref={(e) => (inputRefs.current[1] = e)}
-            onChange={() => handleChange(1)}
+            onChange={(e) => handleChange(e, 1)}
             onKeyDown={(event) => handleKeyDown(event, 1)}
+            onKeyUp={(event) => handleKeyUp(event, 1)}
             maxLength={1}
             className='py-3 px-2 text-center border-third border-2 rounded-xl bg-transparent md:w-12 text-2xl text-secondary uppercase outline-none'
           />
@@ -61,8 +65,9 @@ function InviteBox({
         <div className='relative flex justify-center mr-2'>
           <input
             ref={(e) => (inputRefs.current[2] = e)}
-            onChange={() => handleChange(2)}
+            onChange={(e) => handleChange(e, 2)}
             onKeyDown={(event) => handleKeyDown(event, 2)}
+            onKeyUp={(event) => handleKeyUp(event, 2)}
             maxLength={1}
             className='py-3 px-2 text-center border-third border-2 rounded-xl bg-transparent md:w-12 text-2xl text-secondary uppercase outline-none'
           />
@@ -71,8 +76,9 @@ function InviteBox({
         <div className='relative flex justify-center mr-2'>
           <input
             ref={(e) => (inputRefs.current[3] = e)}
-            onChange={() => handleChange(3)}
+            onChange={(e) => handleChange(e, 3)}
             onKeyDown={(event) => handleKeyDown(event, 3)}
+            onKeyUp={(event) => handleKeyUp(event, 3)}
             maxLength={1}
             className='py-3 px-2 text-center border-third border-2 rounded-xl bg-transparent md:w-12 text-2xl text-secondary uppercase outline-none'
           />
@@ -81,8 +87,9 @@ function InviteBox({
         <div className='relative flex justify-center mr-2'>
           <input
             ref={(e) => (inputRefs.current[4] = e)}
-            onChange={() => handleChange(4)}
+            onChange={(e) => handleChange(e, 4)}
             onKeyDown={(event) => handleKeyDown(event, 4)}
+            onKeyUp={(event) => handleKeyUp(event, 4)}
             maxLength={1}
             className='py-3 px-2 text-center border-third border-2 rounded-xl bg-transparent md:w-12 text-2xl text-secondary uppercase outline-none'
           />

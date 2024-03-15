@@ -9,7 +9,7 @@ export default function Home() {
       <Image src={Background} alt='Background Image' className='relative top-0 w-full h-full' />
       <div className='absolute top-0 xl:ml-32 xl:pt-40 lg:ml-12 lg:pt-32 flex flex-row h-[90%] w-[90%] overflow-hidden'>
         <article className='xl:mr-36 xl:w-[60%] lg:w-4/5 lg:mr-12'>
-          <div className='xl:w-3/5 lg:w-4/5'>
+          <div className='lg:w-4/5'>
             <h2 className='xl:text-[42px] lg:text-4xl font-semibold text-secondary mb-10 tracking-wide'>
               The L2 that helps you earn more ETH
             </h2>
