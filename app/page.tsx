@@ -7,11 +7,13 @@ export default function Home() {
   return (
     <main className='relative w-[100vw] h-[100vh] overflow-hidden'>
       <Image src={Background} alt='Background Image' className='relative top-0 w-full h-full' />
-      <div className='absolute top-0 lg:ml-32 lg:pt-40 flex flex-row h-[90%] w-[90%] overflow-hidden'>
-        <article className='mr-36 w-[60%]'>
-          <div className='w-3/5'>
-            <h2 className='lg:text-[42px] font-bold text-secondary mb-10'>The L2 that helps you earn more ETH</h2>
-            <p className='text-[#D7E0CC] font-semibold text-xl mb-10'>
+      <div className='absolute top-0 xl:ml-32 xl:pt-40 lg:ml-12 lg:pt-32 flex flex-row h-[90%] w-[90%] overflow-hidden'>
+        <article className='xl:mr-36 xl:w-[60%] lg:w-4/5 lg:mr-12'>
+          <div className='xl:w-3/5 lg:w-4/5'>
+            <h2 className='xl:text-[42px] lg:text-4xl font-semibold text-secondary mb-10 tracking-wide'>
+              The L2 that helps you earn more ETH
+            </h2>
+            <p className='text-[#D7E0CC] font-medium text-xl mb-10'>
               The only Ethereum L2 with native yield for ETH and stablecoins. Mainnet now live.
             </p>
             <Button className='font-bold'>BRIDGE & EARN</Button>

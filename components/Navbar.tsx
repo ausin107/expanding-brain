@@ -3,9 +3,9 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <header className='px-32 pb-5 pt-16 fixed top-0 z-10 flex flex-row items-center'>
+    <header className='xl:px-32 xl:pt-16 lg:px-12 lg:pt-10 fixed top-0 z-10 flex flex-row items-center'>
       <h1 className='text-primary text-3xl font-bold mr-10'>Expading Brain</h1>
-      <nav className='flex flex-row text-third lg:text-base font-bold'>
+      <nav className='flex flex-row text-third xl:text-base font-bold'>
         <Link href='' className='md:mr-10 hover:text-white'>
           HOME
         </Link>

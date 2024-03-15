@@ -23,7 +23,7 @@ export default function RootLayout({
         <footer className='flex items-center justify-end w-full absolute bottom-0 shadow-lg px-20 py-5'>
           <div className='w-full h-full absolute top-0 right-0 bg-black opacity-80 blur-lg'></div>
           <div className='absolute z-10 flex items-center'>
-            <div className='flex items-center mr-3'>
+            <div className='hidden xl:flex items-center mr-3'>
               <div className='w-16 h-2 bg-[#75835D] opacity-40 mr-6'></div>
               <div className='w-1 h-2 bg-[#75835D] opacity-40 mr-1'></div>
               <div className='w-1 h-2 bg-[#75835D] opacity-40 mr-3'></div>

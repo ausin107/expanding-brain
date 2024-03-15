@@ -9,7 +9,7 @@ export default function Button({ children, className }: ButtonProps) {
     <div className='drop-shadow-btn'>
       <button
         className={twMerge(
-          `py-2 px-16 rounded-lg bg-primary font-bold button-clipPath hover:bg-white transition-colors lg:text-base tracking-wide`,
+          `py-2 px-16 rounded-lg bg-primary font-bold button-clipPath hover:bg-white transition-colors xl:text-base tracking-wide`,
           className
         )}>
         {children}
