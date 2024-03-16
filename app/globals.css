@@ -13,6 +13,7 @@
 }
 body {
   font-family: 'Geom Graphic W03 Regular';
+  background-color: black;
 }
 .button-clipPath {
   -webkit-clip-path: polygon(20px 0, 100% 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 0 50%);

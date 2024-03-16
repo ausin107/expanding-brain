@@ -3,7 +3,9 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-
+import { Provider } from 'react-redux'
+import { store } from '@/lib/store'
+import StoreProvider from './StoreProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
-      <body className=''>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <StoreProvider>
+      <html lang='en'>
+        <body className=''>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </StoreProvider>
   )
 }

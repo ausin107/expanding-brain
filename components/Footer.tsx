@@ -2,23 +2,23 @@ import React from 'react'
 
 function Footer({}) {
   return (
-    <footer className='flex items-center justify-end w-full absolute bottom-0 shadow-lg px-20 py-5'>
+    <footer className='flex items-center justify-end w-full absolute bottom-0 shadow-lg md:px-20 md:py-5 md:overflow-hidden py-5'>
       <div className='w-full h-full absolute top-0 right-0 bg-black opacity-80 blur-lg'></div>
-      <div className='absolute z-10 flex items-center'>
+      <div className='absolute z-10 flex items-center w-full pl-5 md:pl-0'>
         <div className='hidden xl:flex items-center mr-3'>
           <div className='w-16 h-2 bg-camo opacity-40 mr-6'></div>
           <div className='w-1 h-2 bg-camo opacity-40 mr-1'></div>
           <div className='w-1 h-2 bg-camo opacity-40 mr-3'></div>
           <div className='text-secondary uppercase font-semibold text-sm'>total follower / 200,000</div>
         </div>
-        <div className='flex items-center mr-3'>
+        <div className='hidden md:flex items-center mr-3'>
           <div className='w-[3px] h-2 bg-camo opacity-40 mr-1'></div>
           <div className='w-[3px] h-2 bg-camo opacity-40 mr-1'></div>
           <div className='w-[3px] h-2 bg-camo opacity-40 mr-1'></div>
           <div className='w-7 h-2 bg-camo opacity-40 mr-3'></div>
           <div className='text-secondary uppercase font-semibold text-sm'>total users / 100,000</div>
         </div>
-        <div className='flex items-center mr-20'>
+        <div className='flex items-center md:mr-20 mr-auto'>
           <div className='w-7 h-2 bg-camo opacity-40 mr-1'></div>
           <div className='w-[3px] h-2 bg-camo opacity-40 mr-3'></div>
           <div className='text-secondary uppercase font-semibold text-sm'>farming live</div>
@@ -54,7 +54,7 @@ function Footer({}) {
             </g>
           </svg>
         </div>
-        <div className='cursor-pointer'>
+        <div className='mr-5 cursor-pointer'>
           <svg viewBox='0 0 15 15' width={24} height={24} fill='none' xmlns='http://www.w3.org/2000/svg'>
             <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
             <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>

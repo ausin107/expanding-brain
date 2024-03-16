@@ -34,7 +34,7 @@ function InviteBox({
     }
   }
   return (
-    <div className={twMerge('flex flex-col items-center', className)}>
+    <div className={twMerge('flex flex-col lg:items-center items-start', className)}>
       <h3 className='text-lg text-primary font-bold mb-7'>{title}</h3>
       <p className='text-secondary font-semibold xl:w-4/5 lg:w-full text-center mb-7 lg:text-sm xl:text-base'>
         {subTitle}
