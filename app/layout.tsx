@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang='en'>
-        <body className=''>
+        <body className='w-[100vw] overflow-x-hidden relative'>
           <Navbar />
           {children}
           <Footer />

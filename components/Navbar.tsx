@@ -32,7 +32,7 @@ function Navbar() {
           AIRDROP
         </Link>
         <Link
-          href=''
+          href='/about'
           className={twMerge('lg:mr-10 md:mr-5 hover:text-white', pathName.includes('/about') && 'text-secondary')}>
           ABOUT
         </Link>
