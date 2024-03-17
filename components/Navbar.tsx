@@ -1,28 +1,47 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { openSidebar, closeSidebar } from '@/lib/features/sidebarSlice'
 import { useAppDispatch, useAppSelector } from '@/lib/hooks'
+import { usePathname } from 'next/navigation'
+import { twMerge } from 'tailwind-merge'
 function Navbar() {
+  const [currentTabs, setTabs] = useState(null)
+  const tabRefs = useRef<HTMLAnchorElement[] | null[]>([])
   const dispatch = useAppDispatch()
   const isOpen = useAppSelector((state) => state.sidebar.isOpen)
   const handleToggleSidebar = () => {
     isOpen ? dispatch(closeSidebar()) : dispatch(openSidebar())
   }
+  const pathName = usePathname()
+  useEffect(() => {}, [pathName])
   return (
-    <header className='w-full xl:px-20 xl:pt-16 lg:px-12 lg:pt-10 md:pt-16 md:px-8 pt-10 px-6 fixed top-0 z-10 flex flex-row items-center justify-between md:justify-normal'>
+    <header
+      className={twMerge(
+        'w-full xl:px-20 xl:pt-16 lg:px-12 lg:pt-10 md:pt-16 md:px-8 pt-10 px-6 fixed top-0 z-10 flex flex-row items-center justify-between md:justify-normal border-b border-third pb-6',
+        pathName == '/' && 'border-b-0'
+      )}>
       <h1 className='text-primary lg:text-3xl md:text-xl text-2xl font-bold lg:mr-10 mr-5'>Expading Brain</h1>
       <nav className='md:flex flex-row text-third xl:text-base text-base font-bold hidden'>
         <Link href='/' className='lg:mr-10 md:mr-5 hover:text-white'>
           HOME
         </Link>
-        <Link href='' className='lg:mr-10 md:mr-5 hover:text-white'>
+        <Link
+          href='/airdrop'
+          className={twMerge('lg:mr-10 md:mr-5 hover:text-white', pathName.includes('/airdrop') && 'text-secondary')}>
           AIRDROP
         </Link>
-        <Link href='' className='lg:mr-10 md:mr-5 hover:text-white'>
+        <Link
+          href=''
+          className={twMerge('lg:mr-10 md:mr-5 hover:text-white', pathName.includes('/about') && 'text-secondary')}>
           ABOUT
         </Link>
-        <Link href='' className='lg:mr-10 md:mr-5 hover:text-white'>
+        <Link
+          href=''
+          className={twMerge(
+            'lg:mr-10 md:mr-5 hover:text-white',
+            pathName.includes('/leaderboard') && 'text-secondary'
+          )}>
           LEADERBOARD
         </Link>
         <div className='cursor-pointer'>
