@@ -4,7 +4,7 @@ function Footer({}) {
   return (
     <footer className='flex items-center justify-end w-full absolute bottom-0 shadow-lg md:px-20 md:py-5 md:overflow-hidden py-5'>
       <div className='w-full h-full absolute top-0 right-0 bg-black opacity-80 blur-lg'></div>
-      <div className='absolute z-10 flex items-center w-full pl-5 md:pl-0'>
+      <div className='absolute z-10 flex items-center justify-end w-full pl-5 md:pl-0'>
         <div className='hidden xl:flex items-center mr-3'>
           <div className='w-16 h-2 bg-camo opacity-40 mr-6'></div>
           <div className='w-1 h-2 bg-camo opacity-40 mr-1'></div>
