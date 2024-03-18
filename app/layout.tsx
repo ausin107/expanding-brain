@@ -1,11 +1,11 @@
+import '@rainbow-me/rainbowkit/styles.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { Provider } from 'react-redux'
-import { store } from '@/lib/store'
 import StoreProvider from './StoreProvider'
+import Web3Provider from './Web3Provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -22,9 +22,11 @@ export default function RootLayout({
     <StoreProvider>
       <html lang='en'>
         <body className='w-[100vw] overflow-x-hidden relative'>
-          <Navbar />
-          {children}
-          <Footer />
+          <Web3Provider>
+            <Navbar />
+            {children}
+            <Footer />
+          </Web3Provider>
         </body>
       </html>
     </StoreProvider>
