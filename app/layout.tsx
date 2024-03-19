@@ -21,11 +21,13 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html lang='en'>
-        <body className='w-[100vw] overflow-x-hidden relative'>
+        <body>
           <Web3Provider>
-            <Navbar />
-            {children}
-            <Footer />
+            <div className='w-[100vw] overflow-x-hidden relative'>
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
           </Web3Provider>
         </body>
       </html>

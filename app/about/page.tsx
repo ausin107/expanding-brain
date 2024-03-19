@@ -150,12 +150,6 @@ function About() {
         <div className='bg-black w-4/5 rounded-xl py-16 px-10 flex items-center flex-col'>
           <h1 className='text-secondary xl:text-4xl mb-10 font-semibold'>Have you claimed your airdrop yet?</h1>
           <Button className='mb-8'>CLAIM YOUR AIRDROP</Button>
-          <div className='text-third font-medium'>
-            <Link href='/' className='text-primary hover:text-white'>
-              Click here
-            </Link>{' '}
-            if you&apos;re a developer
-          </div>
         </div>
       </section>
     </div>
