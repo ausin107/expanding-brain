@@ -23,8 +23,8 @@ export const LoginButton = () => {
                   <button
                     onClick={openConnectModal}
                     type='button'
-                    className='bg-[#2422e5] hover:scale-105 text-white py-3 px-5 rounded-lg text-lg font-bold'>
-                    Connect Wallet
+                    className='bg-[#2422e5] hover:scale-105 text-white py-3 px-5 rounded-lg lg:text-lg md:text-sm font-bold'>
+                    Connect
                   </button>
                 )
               }
@@ -42,7 +42,7 @@ export const LoginButton = () => {
                 <button
                   onClick={openAccountModal}
                   type='button'
-                  className='text-lg font-bold bg-secondary hover:scale-105 text-black py-3 px-5 rounded-lg'>
+                  className='xl:text-lg lg:text-base md:text-xs font-bold bg-secondary hover:scale-105 text-black py-3 px-5 rounded-lg'>
                   {account.displayName}
                 </button>
               )

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ClassNameValue, twMerge } from 'tailwind-merge'
 
 type ButtonProps = {
@@ -7,7 +8,7 @@ type ButtonProps = {
 }
 export default function Button({ children, className, containerClass }: ButtonProps) {
   return (
-    <div className={twMerge('drop-shadow-btn', containerClass)}>
+    <Link href='/airdrop' className={twMerge('drop-shadow-btn', containerClass)}>
       <button
         className={twMerge(
           `py-2 px-16 rounded-lg bg-primary font-bold button-clipPath hover:bg-white transition-colors xl:text-base tracking-wide`,
@@ -15,6 +16,6 @@ export default function Button({ children, className, containerClass }: ButtonPr
         )}>
         {children}
       </button>
-    </div>
+    </Link>
   )
 }

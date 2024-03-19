@@ -15,28 +15,24 @@ export default function Home() {
         alt='Background Image'
         className='relative top-0 w-full h-full object-cover object-left lg:object-center'
       />
-      <div className='absolute top-0 xl:pt-48 lg:pt-40 md:pt-40 md:px-0 px-5 pt-32 flex lg:flex-row flex-col h-[90%] lg:w-full md:w-3/5 lg:justify-between xl:pl-20 lg:pl-12 md:pl-8 justify-normal overflow-hidden'>
+      <div className='absolute top-0 xl:pt-48 lg:pt-40 md:pt-40 md:px-0 px-5 pt-32 flex lg:flex-row flex-col h-[90%] lg:w-full md:w-3/5 lg:justify-between xl:pl-20 lg:pl-8 md:pl-8 justify-normal overflow-hidden'>
         <article className='mb-10 lg:mb-0'>
           <div className='lg:max-w-[33rem] md:max-w-[35rem] w-full'>
             <h2 className='xl:text-[42px] lg:text-4xl md:text-3xl text-3xl font-semibold text-secondary xl:mb-16 mb-10 tracking-wide'>
               The Community Coin of Blast
             </h2>
-            <p className='text-[#ccd4e0] font-semibold lg:text-xl md:text-base text-lg xl:mb-16 mb-10'>
+            <p className='text-[#ccd4e0] font-semibold lg:text-xl md:text-base text-lg lg:mb-16'>
               New Ethereum game! Join & earn! Calling builders, creators & crypto enthusiasts!
             </p>
-            <Button className='font-bold xl:px-24 lg:px-16' containerClass='flex justify-center md:block'>
+            <Button
+              className='font-bold xl:px-24 lg:px-16 hidden lg:block'
+              containerClass='flex justify-center md:block'>
               JOIN NOW
             </Button>
           </div>
         </article>
         <aside className='xl:px-5 lg:px-5 flex lg:items-center md:items-start items-center flex-col lg:border-l border-third'>
-          <div className='md:hidden flex items-center border-t border-third h-1 w-full pt-2 opacity-30'>
-            <div className='h-2 w-12 bg-third mr-3'></div>
-            <div className='h-2 w-1 bg-third mr-3'></div>
-            <div className='h-2 w-5 bg-third mr-auto'></div>
-            <div className='h-[2px] w-24 bg-third'></div>
-          </div>
-          <InviteBox className='hidden md:block' />
+          <InviteBox className='' />
           <section className='flex flex-col lg:items-center md:items-start items-center mt-10'>
             <h3 className='text-light font-bold mb-5'>BUILT ON</h3>
             <Image src={Blast_Logo} alt='Blast Logo image' className='xl:w-full' />
