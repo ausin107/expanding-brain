@@ -21,10 +21,10 @@ function Navbar() {
   return (
     <header
       className={twMerge(
-        'w-[100vw] xl:px-20 xl:py-6 lg:px-12 lg:pt-10 md:py-10 md:px-8 pt-2 px-6 fixed top-0 z-10 flex flex-row items-center justify-between md:justify-normal lg:border-b border-third',
-        pathName == '/' && 'border-b-0'
+        'w-[100vw] xl:px-20 xl:py-6 lg:px-12 lg:pt-10 md:py-10 md:px-8 pt-2 px-6 fixed top-0 z-10 flex flex-row items-center justify-between md:justify-normal lg:border-b border-third bg-[#11140c]',
+        pathName == '/' && 'border-none bg-transparent'
       )}>
-      <Link href='' className='flex items-center'>
+      <Link href='/' className='flex items-center'>
         <Image src={Logo} alt='Image' className='w-20' />
         <h1 className='text-primary lg:text-3xl md:text-xl text-xl font-bold lg:mr-10 mr-5 lg:block hidden'>
           Expanding Brain

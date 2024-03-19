@@ -82,6 +82,69 @@ function About() {
         <p className='text-third font-bold xl:text-2xl mb-16'>
           To build an engaged community, $EXP is being airdropped to Blast depositors and creators
         </p>
+        <h3 className='text-secondary xl:text-2xl mb-10 font-semibold'>$EXP is a fair launch</h3>
+        <p className='text-third font-bold xl:text-2xl mb-16'>
+          We’re rewarding all Blast community members from the start for their contributions.
+          <br />
+          <br />
+          There are no insider allocations, paid tweets, collab deals, or taxes.
+          <br />
+          <br />
+          This token structure enables us to continually grow the Expanding Brain network and have a reserve to fund
+          future community-led Blast initiatives.
+          <br />
+          <br />
+          Users may keep $EXP in their wallet and utilize it for spending with any third party, platform, or merchant.
+        </p>
+      </section>
+      <section>
+        <h1 className='text-secondary xl:text-5xl mb-16 font-semibold'>Join the Expanding Brain</h1>
+        <p className='text-third font-bold xl:text-2xl mb-16 border-l-8 border-[#2422e5] pl-7'>
+          Twitter: <span className='text-primary'>@pacmoon_</span>
+          <br />
+          <br />
+          Telegram: <span className='text-primary'>Join Now</span>
+          <br />
+          <br />
+          Website: <span className='text-primary'>http://pacmoon.io</span>
+        </p>
+        <p className='text-third font-bold xl:text-2xl mb-16'>
+          Legal Disclaimers
+          <br />
+          <br />
+          $PAC is not intended to constitute securities in Panama, Singapore or any relevant jurisdiction, and will not
+          entitle token holders to any promise of dividends, revenue, fees, profits or investment returns.
+          <br />
+          <br />
+          $PAC is non-refundable and cannot be exchanged for cash (or its equivalent value in any other digital asset)
+          or any payment obligation, does not represent any shareholding, ownership, participation, right, title, or
+          interest in any entity, is not a representation of money (including electronic money), payment instrument,
+          security, commodity, bond, debt instrument, unit in a collective investment or managed investment scheme or
+          any other kind of financial instrument or investment, and does not entitle token holders to any promise of
+          revenue, fees, profits or investment returns.
+          <br />
+          <br />
+          $PAC does not represent any shareholding, participation, right, title, or interest in any entity, enterprise
+          or undertaking. Once issued, it does not appear that holders of $PAC incur any liability to any entity,
+          enterprise or undertaking).
+          <br />
+          <br />
+          There is no buy-back or destruction mechanism planned for $PAC.
+          <br />
+          <br />
+          $PAC is non-refundable, not redeemable for any assets of any entity or organization, and $PAC cannot be
+          exchanged for cash (or its equivalent value in any other digital asset) or any payment obligation by any
+          entity or any affiliate.
+          <br />
+          <br />
+          $PAC is not a loan to any entity and there is no expectation of profit nor interest payment.
+          <br />
+          <br />
+          Users are acquiring $PAC to participate in PacMoon and to obtain services on the ecosystem thereon.
+          <br />
+          <br />
+          $PAC may have no value and there is no guarantee or representation of value or liquidity for $PAC.
+        </p>
       </section>
       <section className='w-full flex items-center justify-center'>
         <div className='bg-black w-4/5 rounded-xl py-16 px-10 flex items-center flex-col'>
