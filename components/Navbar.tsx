@@ -31,7 +31,7 @@ function Navbar() {
         </h1>
       </Link>
       <nav className='md:flex flex-row text-third xl:text-base items-center text-base font-bold hidden mr-auto'>
-        <Link href='/' className='lg:mr-10 md:mr-5 hover:text-white'>
+        <Link href='/' className={twMerge('lg:mr-10 md:mr-5 hover:text-white', pathName == '/' && 'text-secondary')}>
           HOME
         </Link>
         <Link

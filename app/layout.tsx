@@ -19,18 +19,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <StoreProvider>
-      <html lang='en'>
-        <body>
-          <Web3Provider>
-            <div className='w-[100vw] overflow-x-hidden relative'>
-              <Navbar />
-              {children}
-              <Footer />
-            </div>
-          </Web3Provider>
-        </body>
-      </html>
-    </StoreProvider>
+    <html lang='en'>
+      <body className='w-[100vw] overflow-x-hidden relative'>
+        <Web3Provider>
+          <StoreProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </StoreProvider>
+        </Web3Provider>
+      </body>
+    </html>
   )
 }
