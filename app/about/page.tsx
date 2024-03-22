@@ -27,7 +27,7 @@ function About() {
         </p>
         <p className='text-third font-bold xl:text-xl'>
           Welcome to a new era of Ethereum. Brought to you by Blast and Expading Brain. This game is different. Your
-          voice is rewarded with $EXP. Every contribution builds our network. We call upon the builders, creators, and
+          voice is rewarded with $EBC. Every contribution builds our network. We call upon the builders, creators, and
           degens. It’s time, are you ready? Join the Expading Brain as we head to the MOON.
         </p>
       </section>
@@ -53,7 +53,7 @@ function About() {
           ecosystem.
           <br />
           <br />
-          $EXP may only be utilized as the unit of account within Expanding Brain’s ecosystem.
+          $EBC may only be utilized as the unit of account within Expanding Brain’s ecosystem.
         </p>
         <p className='text-third font-bold xl:text-2xl mb-16 border-l-8 border-[#2422e5] pl-7'>
           1. Your tweet becomes eligible to accumulate points once the @Expanding Brain_ account likes it.
@@ -68,21 +68,21 @@ function About() {
           We’ll only like Expanding Brain related content and filter out activity suspect of botting or misplay.
           <br />
           <br />
-          Ultimately, the more you share Expanding Brain, the more $EXP you can earn.
+          Ultimately, the more you share Expanding Brain, the more $EBC you can earn.
         </p>
         <h3 className='text-secondary xl:text-2xl mb-16 font-semibold'>WHO IS THIS FOR?</h3>
         <p className='text-third font-bold xl:text-2xl mb-16'>
           Expanding Brain isn’t just for big influencers. It’s for the memelords, artists, traders, musicians, traders,
-          writers etc… Everyone loves the feeling of earning $EXP and getting a surge of engagement from a Expanding
+          writers etc… Everyone loves the feeling of earning $EBC and getting a surge of engagement from a Expanding
           Brain retweet. And we’re focused on giving that feeling to as many creators as we can.
         </p>
       </section>
       <section>
         <h1 className='text-secondary xl:text-5xl mb-16 font-semibold'>Tokenomics</h1>
         <p className='text-third font-bold xl:text-2xl mb-16'>
-          To build an engaged community, $EXP is being airdropped to Blast depositors and creators
+          To build an engaged community, $EBC is being airdropped to Blast depositors and creators
         </p>
-        <h3 className='text-secondary xl:text-2xl mb-10 font-semibold'>$EXP is a fair launch</h3>
+        <h3 className='text-secondary xl:text-2xl mb-10 font-semibold'>$EBC is a fair launch</h3>
         <p className='text-third font-bold xl:text-2xl mb-16'>
           We’re rewarding all Blast community members from the start for their contributions.
           <br />
@@ -94,7 +94,7 @@ function About() {
           future community-led Blast initiatives.
           <br />
           <br />
-          Users may keep $EXP in their wallet and utilize it for spending with any third party, platform, or merchant.
+          Users may keep $EBC in their wallet and utilize it for spending with any third party, platform, or merchant.
         </p>
       </section>
       <section>

@@ -25,6 +25,9 @@ body {
 .drop-shadow-btn:hover {
   filter: drop-shadow(0px 0px 14px #ffffff55);
 }
+.drop-shadow-text {
+  filter: drop-shadow(0px 0px 5px #007bff);
+}
 
 .icon:hover {
   fill: #c7e0f4;
@@ -43,4 +46,10 @@ body {
 .animate-fadeIn {
   animation-name: fadeIn;
   animation-duration: 2s;
+}
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }

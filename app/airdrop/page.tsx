@@ -68,10 +68,10 @@ function Airdrop({}) {
     } else return <div>{index}</div>
   }
   return (
-    <div className='flex flex-col items-center pt-40 h-[95vh] bg-[#11140c]'>
+    <div className='flex flex-col items-center pt-40 pb-16 bg-[#11140c]'>
       <div className='flex flex-col items-center justify-center mb-10 py-10 px-32 border-8 border-third border-opacity-30'>
         <h1 className='text-4xl font-bold text-primary mb-5'>Welcome to Expanding Brain</h1>
-        <h3 className='text-secondary text-2xl font-bold'>Claim your $EXP Airdrop</h3>
+        <h3 className='text-secondary text-2xl font-bold'>Claim your $EBC Airdrop</h3>
       </div>
       <h5 className='text-secondary text-2xl mb-8'>Verify Your Eligibility</h5>
       <div>
