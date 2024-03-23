@@ -21,7 +21,9 @@ function Navbar() {
       )}>
       <Link href='/' className='flex items-center'>
         <Image src={Logo} alt='Image' className='w-20' />
-        <h1 className='text-primary xl:text-3xl lg:text-base md:text-xl text-lg font-bold mr-5'>Expanding Brain</h1>
+        <h1 className='text-primary xl:text-3xl lg:text-base md:text-xl text-lg font-bold mr-5 lg:w-full md:w-1/2'>
+          Expanding Brain
+        </h1>
       </Link>
       <nav className='md:flex flex-row text-third xl:text-base items-center text-base font-bold hidden mr-auto'>
         <Link href='/' className={twMerge('md:mr-5 hover:text-white', pathName == '/' && 'text-secondary')}>
@@ -37,11 +39,11 @@ function Navbar() {
           className={twMerge('md:mr-5 hover:text-white', pathName.includes('/about') && 'text-secondary')}>
           ABOUT
         </Link>
-        <Link
+        {/* <Link
           href=''
           className={twMerge('md:mr-5 hover:text-white', pathName.includes('/leaderboard') && 'text-secondary')}>
           LEADERBOARD
-        </Link>
+        </Link> */}
         <div className='cursor-pointer'>
           <svg viewBox='0 0 24.00 24.00' fill='none' width={24} height={24} xmlns='http://www.w3.org/2000/svg'>
             <path

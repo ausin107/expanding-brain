@@ -9,36 +9,30 @@ import { twMerge } from 'tailwind-merge'
 export default function Home() {
   const isOpen = useAppSelector((state) => state.sidebar.isOpen)
   return (
-    <main className={twMerge('relative w-[100vw] h-[95vh] md:overflow-hidden overflow-x-hidden', isOpen && 'blur')}>
+    <main
+      className={twMerge('md:relative w-[100vw] md:h-[94vh] md:overflow-hidden overflow-x-hidden', isOpen && 'blur')}>
       <Image
         src={Background}
         alt='Background Image'
-        className='relative top-0 w-full h-full object-cover object-left lg:object-center'
+        className='md:relative absolute top-0 w-full h-full object-cover object-left lg:object-center'
       />
-      <div className='absolute top-0 lg:pt-36 md:pt-40 md:px-0 px-5 pt-32 flex lg:flex-row flex-col h-[90%] lg:w-full md:w-3/5 lg:justify-between xl:pl-20 lg:pl-8 md:pl-8 justify-normal overflow-hidden'>
+      <div className='md:absolute relative top-0 lg:pt-36 md:pt-40 pt-32 flex lg:flex-row flex-col h-full md:w-full lg:justify-between xl:pl-20 lg:pl-8 lg:px-0 md:px-24 px-3 md:items-center lg:items-start justify-normal overflow-hidden'>
         <article className='mb-10 lg:mb-0'>
-          <div className='lg:max-w-[33rem] md:max-w-[35rem] w-full'>
-            <h2 className='xl:text-[42px] lg:text-4xl md:text-3xl text-3xl font-semibold text-secondary xl:mb-16 mb-10 tracking-wide'>
+          <div className='lg:max-w-[33rem] md:max-w-[35rem] w-full md:flex lg:block items-center flex-col'>
+            <h2 className='xl:text-[42px] lg:text-4xl md:text-3xl text-3xl font-semibold md:text-center lg:text-left text-secondary xl:mb-16 mb-10 tracking-wide'>
               The Community Coin of Blast
             </h2>
-            <p className='text-[#ccd4e0] font-semibold lg:text-xl md:text-base text-lg lg:mb-16'>
+            <p className='text-[#ccd4e0] font-semibold lg:text-xl md:text-base text-lg lg:mb-16 md:mb-10 md:text-center lg:text-left'>
               New Ethereum game! Join & earn! Calling builders, creators & crypto enthusiasts!
             </p>
             <Button
-              className='font-bold xl:px-24 lg:px-16 hidden lg:block'
+              className='font-bold xl:px-24 lg:px-16 hidden md:block'
               containerClass='flex justify-center md:block'>
               JOIN NOW
             </Button>
           </div>
         </article>
-        {/* <aside className='xl:px-5 lg:px-5 flex lg:items-center md:items-start items-center flex-col lg:border-l border-third'>
-          <InviteBox className='' />
-          <section className='flex flex-col lg:items-center md:items-start items-center mt-10'>
-            <h3 className='text-light font-bold mb-5'>BUILT ON</h3>
-            <Image src={Blast_Logo} alt='Blast Logo image' className='xl:w-full' />
-          </section>
-        </aside> */}
-        <aside className='w-[38%] lg:mr-10 py-5 px-7 lg:border-2 rounded-xl border-secondary flex flex-col justify-around bg-[#00000080]'>
+        <aside className='xl:w-[38%] lg:w-2/5 md:h-3/5 lg:h-[90%] lg:mr-10 py-5 px-4 md:mb-0 mb-10 h-[40rem] lg:border-2 rounded-xl border-secondary flex flex-col justify-around bg-[#00000080]'>
           <h1 className='text-2xl text-primary font-bold text-center drop-shadow-[0_0_5px_#007bff]'>
             BUY AND STAKE <span className='text-[#FCFC03]'>$EBC</span> FOR 10% DISCOUNT
           </h1>
@@ -46,18 +40,18 @@ export default function Home() {
             Buy and stake $EBC to earn rewards, plus qualify for the huge airdrop!
           </p>
           <div className='flex justify-between w-full '>
-            <button className='py-3 px-11 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
+            <button className='xl:py-3 xl:px-11 lg:py-2 lg:px-6 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
               ETH
             </button>
-            <button className='py-3 px-11 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
+            <button className='xl:py-3 xl:px-11 lg:py-2 lg:px-6 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
               USDT
             </button>
-            <button className='py-3 px-11 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
+            <button className='xl:py-3 xl:px-11 lg:py-2 lg:px-6 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
               CARD
             </button>
           </div>
-          <div className='flex items-center justify-between'>
-            <div className='w-[48%] border-secondary rounded-lg border-2 py-1 px-5 bg-[#000000a6]'>
+          <div className='flex md:flex-row flex-col items-center justify-between'>
+            <div className='md:w-[48%] w-full md:mb-0 mb-7 border-secondary rounded-lg border-2 py-1 px-5 bg-[#000000a6]'>
               <h5 className='text-sm text-secondary font-semibold'>Pay with ETH</h5>
               <input
                 placeholder='0'
@@ -65,7 +59,7 @@ export default function Home() {
                 className='borders-none bg-transparent outline-none text-white text-lg number-input w-full'
               />
             </div>
-            <div className='w-[48%] border-secondary rounded-lg border-2 py-1 px-5 bg-[#000000a6]'>
+            <div className='md:w-[48%] w-full border-secondary rounded-lg border-2 py-1 px-5 bg-[#000000a6]'>
               <h5 className='text-sm text-secondary font-semibold'>Receive $EBC</h5>
               <input
                 placeholder='0'
@@ -75,7 +69,7 @@ export default function Home() {
             </div>
           </div>
           <div className='flex w-full justify-center'>
-            <button className='py-3 px-11 rounded-lg bg-primary drop-shadow-btn font-bold tracking-wide hover:bg-white'>
+            <button className='py-3 px-11 md:w-auto w-full rounded-lg bg-primary drop-shadow-btn font-bold tracking-wide hover:bg-white'>
               BUY FOR 42% APY
             </button>
           </div>
