@@ -32,8 +32,8 @@ export default function Home() {
             </Button>
           </div>
         </article>
-        <aside className='xl:w-[38%] lg:w-2/5 md:h-[30rem] xl:h-[40rem] lg:h-[32rem] lg:mr-10 py-5 px-4 md:mb-0 mb-10 h-[40rem] lg:border-2 rounded-xl border-secondary flex flex-col justify-around bg-[#00000080]'>
-          <h1 className='text-2xl text-primary font-bold text-center drop-shadow-[0_0_5px_#007bff]'>
+        <aside className='xl:w-[38%] lg:w-2/5 md:h-[30rem] xl:h-[35rem] lg:h-[32rem] lg:mr-10 py-5 px-4 md:mb-0 mb-10 h-[40rem] lg:border-2 rounded-xl border-secondary flex flex-col justify-around bg-[#00000080]'>
+          <h1 className='lg:text-2xl md:text-3xl text-xl text-primary font-bold text-center drop-shadow-[0_0_5px_#007bff]'>
             BUY AND STAKE <span className='text-[#FCFC03]'>$EBC</span> FOR 10% DISCOUNT
           </h1>
           <p className='text-white text-center'>

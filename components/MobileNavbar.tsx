@@ -1,4 +1,3 @@
-import {} from 'react'
 import { openSidebar, closeSidebar } from '@/lib/features/sidebarSlice'
 import { useAppDispatch, useAppSelector } from '@/lib/hooks'
 import { ClassNameValue, twMerge } from 'tailwind-merge'
@@ -45,24 +44,32 @@ function MobileNavbar({ className }: MobileProps) {
               'md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third',
               pathName == '/' && 'text-secondary'
             )}>
-            <Link href='/'>HOME</Link>
+            <Link onClick={handleToggleSidebar} href='/'>
+              HOME
+            </Link>
           </div>
           <div
             className={twMerge(
               'md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third',
               pathName.includes('/airdrop') && 'text-secondary'
             )}>
-            <Link href='/airdrop'>AIRDROP</Link>
+            <Link onClick={handleToggleSidebar} href='/airdrop'>
+              AIRDROP
+            </Link>
           </div>
           <div
             className={twMerge(
               'md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third',
               pathName.includes('/about') && 'text-secondary'
             )}>
-            <Link href='/about'>ABOUT</Link>
+            <Link onClick={handleToggleSidebar} href='/about'>
+              ABOUT
+            </Link>
           </div>
           <div className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third'>
-            <Link href='/'>LEADERBOARD</Link>
+            <Link onClick={handleToggleSidebar} href='/'>
+              LEADERBOARD
+            </Link>
           </div>
           <div className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third flex'>
             <svg viewBox='0 0 24.00 24.00' fill='none' width={24} height={24} xmlns='http://www.w3.org/2000/svg'>
