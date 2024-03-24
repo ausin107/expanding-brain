@@ -16,16 +16,16 @@ function Navbar() {
   return (
     <header
       className={twMerge(
-        'w-[100vw] xl:px-20 xl:py-6 lg:px-8 lg:pt-10 md:py-10 md:px-8 pt-2 px-6 fixed top-0 z-10 flex flex-row items-center justify-between md:justify-normal lg:border-b border-third bg-[#11140c]',
-        pathName == '/' && 'border-none bg-transparent'
+        'w-[100vw] xl:px-20 xl:py-6 lg:px-8 lg:py-6 md:py-5 md:px-14 pt-2 px-6 fixed top-0 z-10 flex flex-row items-center justify-between lg:justify-normal lg:border-b border-third navbar-bg',
+        pathName == '/' && 'border-none lg:bg-transparent navbar-bg'
       )}>
       <Link href='/' className='flex items-center'>
         <Image src={Logo} alt='Image' className='w-20' />
-        <h1 className='text-primary xl:text-3xl lg:text-base md:text-xl text-lg font-bold mr-5 lg:w-full md:w-1/2'>
+        <h1 className='text-primary xl:text-3xl lg:text-base md:text-xl text-lg font-bold mr-5 lg:w-full'>
           Expanding Brain
         </h1>
       </Link>
-      <nav className='md:flex flex-row text-third xl:text-base items-center text-base font-bold hidden mr-auto'>
+      <nav className='lg:flex flex-row text-third xl:text-base items-center text-base font-bold hidden mr-auto'>
         <Link href='/' className={twMerge('md:mr-5 hover:text-white', pathName == '/' && 'text-secondary')}>
           HOME
         </Link>
@@ -39,11 +39,11 @@ function Navbar() {
           className={twMerge('md:mr-5 hover:text-white', pathName.includes('/about') && 'text-secondary')}>
           ABOUT
         </Link>
-        {/* <Link
+        <Link
           href=''
           className={twMerge('md:mr-5 hover:text-white', pathName.includes('/leaderboard') && 'text-secondary')}>
           LEADERBOARD
-        </Link> */}
+        </Link>
         <div className='cursor-pointer'>
           <svg viewBox='0 0 24.00 24.00' fill='none' width={24} height={24} xmlns='http://www.w3.org/2000/svg'>
             <path
@@ -79,7 +79,7 @@ function Navbar() {
           </svg>
         </div>
       </nav>
-      <div className='hidden md:block'>
+      <div className='hidden lg:block'>
         <LoginButton />
       </div>
       <MobileNavbar />

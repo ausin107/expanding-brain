@@ -20,13 +20,11 @@ function MobileNavbar({ className }: MobileProps) {
   const pathName = usePathname()
 
   return (
-    <nav className={twMerge('md:hidden', className)}>
+    <nav className={twMerge('lg:hidden', className)}>
       <svg
         viewBox='0 0 24 24'
-        fill='none'
         xmlns='http://www.w3.org/2000/svg'
-        width={24}
-        height={24}
+        className='fill-none md:w-8 md:h-8 w-6 h-6'
         onClick={handleToggleSidebar}>
         <path
           d='M4 6H20M4 12H20M4 18H20'
@@ -37,26 +35,36 @@ function MobileNavbar({ className }: MobileProps) {
       </svg>
       <div
         className={twMerge(
-          'w-[100vw] h-[100vh] absolute top-20 left-0 mt-3 border-t-4 border-third text-third font-semibold opacity-0 transition duration-300 invisible',
+          'w-[100vw] h-[100vh] absolute md:top-28 top-20 left-0 mt-3 border-t-4 border-third text-third font-semibold opacity-0 transition duration-300 invisible',
           isOpen && 'opacity-1 duration-300 transition visible'
         )}>
         <div className='w-full h-full bg-black opacity-70 absolute'></div>
         <div className='absolute w-full z-10'>
-          <div className={twMerge('py-5 px-8 border-b-2 border-third', pathName == '/' && 'text-secondary')}>
+          <div
+            className={twMerge(
+              'md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third',
+              pathName == '/' && 'text-secondary'
+            )}>
             <Link href='/'>HOME</Link>
           </div>
           <div
-            className={twMerge('py-5 px-8 border-b-2 border-third', pathName.includes('/airdrop') && 'text-secondary')}>
+            className={twMerge(
+              'md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third',
+              pathName.includes('/airdrop') && 'text-secondary'
+            )}>
             <Link href='/airdrop'>AIRDROP</Link>
           </div>
           <div
-            className={twMerge('py-5 px-8 border-b-2 border-third', pathName.includes('/about') && 'text-secondary')}>
+            className={twMerge(
+              'md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third',
+              pathName.includes('/about') && 'text-secondary'
+            )}>
             <Link href='/about'>ABOUT</Link>
           </div>
-          <div className='py-5 px-8 border-b-2 border-third'>
+          <div className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third'>
             <Link href='/'>LEADERBOARD</Link>
           </div>
-          <div className='py-5 px-8 border-b-2 border-third flex'>
+          <div className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third flex'>
             <svg viewBox='0 0 24.00 24.00' fill='none' width={24} height={24} xmlns='http://www.w3.org/2000/svg'>
               <path
                 d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z'
@@ -91,7 +99,7 @@ function MobileNavbar({ className }: MobileProps) {
             </svg>
             <div className='ml-3'>LANGUAGE</div>
           </div>
-          <div className='py-5 px-8 border-b-2 border-third flex'>
+          <div className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third flex'>
             <svg
               viewBox='0 -2 20 20'
               version='1.1'
@@ -116,7 +124,7 @@ function MobileNavbar({ className }: MobileProps) {
             </svg>
             <div className='ml-3'>TWITTER</div>
           </div>
-          <div className='py-5 px-8 border-b-2 border-third flex'>
+          <div className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third flex'>
             <svg viewBox='0 0 24 24' width={30} height={30} fill='none' xmlns='http://www.w3.org/2000/svg'>
               <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
               <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round'></g>
@@ -128,7 +136,7 @@ function MobileNavbar({ className }: MobileProps) {
             </svg>
             <div className='ml-3'>DISCORD</div>
           </div>
-          <div className='py-5 px-8 border-b-2 border-third flex'>
+          <div className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third flex'>
             <ConnectButton.Custom>
               {({ account, chain, openAccountModal, openChainModal, openConnectModal, mounted }) => {
                 const ready = mounted

@@ -16,7 +16,7 @@ export default function Home() {
         alt='Background Image'
         className='md:relative absolute top-0 w-full h-full object-cover object-left lg:object-center'
       />
-      <div className='md:absolute relative top-0 lg:pt-36 md:pt-40 pt-32 flex lg:flex-row flex-col h-full md:w-full lg:justify-between xl:pl-20 lg:pl-8 lg:px-0 md:px-24 px-3 md:items-center lg:items-start justify-normal overflow-hidden'>
+      <div className='md:absolute relative top-0 lg:pt-36 md:pt-40 pt-32 flex lg:flex-row flex-col h-full md:w-full lg:justify-between xl:pl-20 lg:pl-8 lg:px-0 md:px-24 px-5 md:items-center lg:items-start justify-normal overflow-hidden'>
         <article className='mb-10 lg:mb-0'>
           <div className='lg:max-w-[33rem] md:max-w-[35rem] w-full md:flex lg:block items-center flex-col'>
             <h2 className='xl:text-[42px] lg:text-4xl md:text-3xl text-3xl font-semibold md:text-center lg:text-left text-secondary xl:mb-16 mb-10 tracking-wide'>
