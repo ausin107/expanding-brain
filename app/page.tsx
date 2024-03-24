@@ -32,7 +32,7 @@ export default function Home() {
             </Button>
           </div>
         </article>
-        <aside className='xl:w-[38%] lg:w-2/5 md:h-3/5 lg:h-[90%] lg:mr-10 py-5 px-4 md:mb-0 mb-10 h-[40rem] lg:border-2 rounded-xl border-secondary flex flex-col justify-around bg-[#00000080]'>
+        <aside className='xl:w-[38%] lg:w-2/5 md:h-[30rem] xl:h-[40rem] lg:h-[32rem] lg:mr-10 py-5 px-4 md:mb-0 mb-10 h-[40rem] lg:border-2 rounded-xl border-secondary flex flex-col justify-around bg-[#00000080]'>
           <h1 className='text-2xl text-primary font-bold text-center drop-shadow-[0_0_5px_#007bff]'>
             BUY AND STAKE <span className='text-[#FCFC03]'>$EBC</span> FOR 10% DISCOUNT
           </h1>
@@ -40,13 +40,13 @@ export default function Home() {
             Buy and stake $EBC to earn rewards, plus qualify for the huge airdrop!
           </p>
           <div className='flex justify-between w-full '>
-            <button className='xl:py-3 xl:px-11 lg:py-2 lg:px-6 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
+            <button className='xl:py-3 xl:px-10 lg:py-2 lg:px-8 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
               ETH
             </button>
-            <button className='xl:py-3 xl:px-11 lg:py-2 lg:px-6 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
+            <button className='xl:py-3 xl:px-10 lg:py-2 lg:px-8 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
               USDT
             </button>
-            <button className='xl:py-3 xl:px-11 lg:py-2 lg:px-6 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
+            <button className='xl:py-3 xl:px-10 lg:py-2 lg:px-8 md:py-3 md:px-11 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide'>
               CARD
             </button>
           </div>

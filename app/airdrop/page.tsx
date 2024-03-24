@@ -68,17 +68,25 @@ function Airdrop({}) {
     } else return <div>{index}</div>
   }
   return (
-    <div className='flex flex-col items-center pt-40 pb-16 bg-[#11140c]'>
-      <div className='flex flex-col items-center justify-center mb-10 py-10 px-32 border-8 border-third border-opacity-30'>
-        <h1 className='text-4xl font-bold text-primary mb-5'>Welcome to Expanding Brain</h1>
-        <h3 className='text-secondary text-2xl font-bold'>Claim your $EBC Airdrop</h3>
+    <div className='lg:h-auto md:h-[95vh] h-screen min-h-[97vh] flex flex-col items-center md:pt-40 pt-32 pb-16 px-5 bg-[#11140c]'>
+      <div className='flex flex-col items-center justify-center xl:mb-10 lg:mb-8 mb-10 xl:py-10 xl:px-32 lg:py-8 lg:px-28 md:py-10 md:px-12 py-7 px-12 md:border-8 border-4 border-third border-opacity-30'>
+        <h1 className='xl:text-4xl lg:text-2xl md:text-4xl text-xl text-center font-bold text-primary mb-5'>
+          Welcome to Expanding Brain
+        </h1>
+        <h3 className='text-secondary xl:text-2xl lg:text-lg md:text-xl text-base text-center font-bold'>
+          Claim your $EBC Airdrop
+        </h3>
       </div>
-      <h5 className='text-secondary text-2xl mb-8'>Verify Your Eligibility</h5>
+      <h5 className='text-secondary lg:text-2xl md:text-3xl text-xl mb-8'>Verify Your Eligibility</h5>
       <div>
-        <div className={twMerge('flex items-center mb-10', currentTask != 0 && 'opacity-50 cursor-not-allowed')}>
+        <div
+          className={twMerge(
+            'flex items-center md:mb-10 mb-5 flex-wrap',
+            currentTask != 0 && 'opacity-50 cursor-not-allowed'
+          )}>
           <div
             className={twMerge(
-              'w-16 h-16 flex items-center justify-center bg-[#2422e5] rounded-2xl text-secondary text-2xl font-bold mr-10',
+              'w-16 h-16 flex items-center justify-center bg-[#2422e5] rounded-2xl text-secondary text-2xl font-bold md:mr-10 mr-5',
               isFllowTw.isVerify && 'bg-yellow-400'
             )}>
             {TaskComponent(1, isFllowTw)}
@@ -86,7 +94,7 @@ function Airdrop({}) {
           <button
             onClick={handleFllowTw}
             className={twMerge(
-              'py-5 px-20 w-[28rem] border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold text-2xl uppercase mr-7',
+              'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase md:mr-7 mr-0',
               currentTask != 0 && 'cursor-not-allowed hover:bg-transparent'
             )}>
             Follow twitter
@@ -94,17 +102,21 @@ function Airdrop({}) {
           <button
             onClick={handleVerify}
             className={twMerge(
-              'uppercase text-xl text-secondary p-3 border-red-500 hover:bg-red-500 border-2 text-center invisible',
+              'uppercase text-xl text-secondary p-3 border-red-500 hover:bg-red-500 border-2 text-center invisible basis-full md:basis-auto hidden md:block md:mt-0 mt-5',
               currentTask != 0 && 'cursor-not-allowed hover:bg-transparent',
-              isFllowTw.isFllow && !isFllowTw.isVerify && 'visible'
+              isFllowTw.isFllow && !isFllowTw.isVerify && 'visible block'
             )}>
             verify
           </button>
         </div>
-        <div className={twMerge('flex items-center mb-10', currentTask != 1 && 'opacity-50 cursor-not-allowed')}>
+        <div
+          className={twMerge(
+            'flex items-center md:mb-10 mb-5 flex-wrap',
+            currentTask != 1 && 'opacity-50 cursor-not-allowed'
+          )}>
           <div
             className={twMerge(
-              'w-16 h-16 flex items-center justify-center bg-[#2422e5] rounded-2xl text-secondary text-2xl font-bold mr-10',
+              'w-16 h-16 flex items-center justify-center bg-[#2422e5] rounded-2xl text-secondary text-2xl font-bold md:mr-10 mr-5',
               isJoinTele.isVerify && 'bg-yellow-400'
             )}>
             {TaskComponent(2, isJoinTele)}
@@ -112,7 +124,7 @@ function Airdrop({}) {
           <button
             onClick={handleJoinTele}
             className={twMerge(
-              'py-5 px-20 w-[28rem] border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold text-2xl uppercase mr-7',
+              'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase md:mr-7 mr-0',
               currentTask != 1 && 'cursor-not-allowed hover:bg-transparent'
             )}>
             join telegram
@@ -120,17 +132,21 @@ function Airdrop({}) {
           <button
             onClick={handleVerifyTele}
             className={twMerge(
-              'uppercase text-xl text-secondary p-3 border-red-500 hover:bg-red-500 border-2 text-center invisible',
+              'uppercase text-xl text-secondary p-3 border-red-500 hover:bg-red-500 border-2 text-center invisible basis-full md:basis-auto hidden md:block md:mt-0 mt-5',
               currentTask != 1 && 'cursor-not-allowed hover:bg-transparent',
-              isJoinTele.isFllow && !isJoinTele.isVerify && 'visible'
+              isJoinTele.isFllow && !isJoinTele.isVerify && 'visible block'
             )}>
             verify
           </button>
         </div>
-        <div className={twMerge('flex items-center mb-10', currentTask != 2 && 'opacity-50 cursor-not-allowed')}>
+        <div
+          className={twMerge(
+            'flex items-center md:mb-10 mb-5 flex-wrap',
+            currentTask != 2 && 'opacity-50 cursor-not-allowed'
+          )}>
           <div
             className={twMerge(
-              'w-16 h-16 flex items-center justify-center bg-[#2422e5] rounded-2xl text-secondary text-2xl font-bold mr-10'
+              'w-16 h-16 flex items-center justify-center bg-[#2422e5] rounded-2xl text-secondary text-2xl font-bold md:mr-10 mr-5'
             )}>
             {TaskComponent(3, { isFllow: false, isVerify: false, isLoading: false })}
           </div>
@@ -154,7 +170,7 @@ function Airdrop({}) {
                         <button
                           onClick={openConnectModal}
                           className={twMerge(
-                            'py-5 px-20 w-[28rem] border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold text-2xl uppercase mr-7',
+                            'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase md:mr-7 mr-0',
                             currentTask != 2 && 'cursor-not-allowed hover:bg-transparent'
                           )}>
                           Connect walllet

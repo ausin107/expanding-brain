@@ -49,10 +49,10 @@ body {
 }
 .number-input::-webkit-outer-spin-button,
 .number-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
 }
+
 .navbar-bg {
   background: #000000bf;
   filter: drop-shadow(0px 0px 14px #000000);
