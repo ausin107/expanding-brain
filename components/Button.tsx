@@ -6,7 +6,7 @@ type ButtonProps = {
   className?: ClassNameValue
   containerClass?: ClassNameValue
 }
-export default function Button({ children, className, containerClass }: ButtonProps) {
+export default function AirdropButton({ children, className, containerClass }: ButtonProps) {
   return (
     <Link href='/airdrop' className={twMerge('drop-shadow-btn', containerClass)}>
       <button

@@ -34,8 +34,8 @@ function MobileNavbar({ className }: MobileProps) {
       </svg>
       <div
         className={twMerge(
-          'w-[100vw] h-[100vh] absolute md:top-28 top-20 left-0 mt-3 border-t-4 border-third text-third font-semibold opacity-0 transition duration-300 invisible',
-          isOpen && 'opacity-1 duration-300 transition visible'
+          'w-[100vw] h-[100vh] absolute md:top-28 top-20 left-0 mt-3 border-t-4 border-third text-third font-semibold opacity-0 transition duration-500 invisible',
+          isOpen && 'opacity-1 duration-500 transition visible'
         )}>
         <div className='w-full h-full bg-black opacity-70 absolute'></div>
         <div className='absolute w-full z-10'>

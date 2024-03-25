@@ -1,6 +1,6 @@
 'use client'
 import { useRef, useState } from 'react'
-import Button from './Button'
+import AirdropButton from '@/components/Button'
 import { ClassNameValue, twMerge } from 'tailwind-merge'
 
 type inviteBoxProps = {
@@ -20,7 +20,7 @@ function InviteBox({
       <p className='text-secondary font-semibold xl:w-4/5 lg:w-full w-4/5 text-center mb-7 lg:text-sm xl:text-base'>
         {subTitle}
       </p>
-      <Button className='bg-secondary px-20'>JOIN NOW</Button>
+      <AirdropButton className='bg-secondary px-20'>JOIN NOW</AirdropButton>
     </div>
   )
 }
