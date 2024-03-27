@@ -1,13 +1,11 @@
 import Image from 'next/image'
-import {} from 'react'
 import Logo from '@/assets/Logo.png'
 import Blast_Logo from '@/assets/Blast_Logo.webp'
 import AirdropButton from '@/components/Button'
 
-import Link from 'next/link'
 function About() {
   return (
-    <div className='w-[100vw] xl:pt-40 xl:px-40 lg:pt-32 md:pt-28 md:px-14 px-5 pt-24 xl:pb-20 pb-10 bg-[#11140c]'>
+    <div className='w-[100vw] xl:pt-40 xl:px-40 lg:pt-32 md:pt-28 md:px-14 px-5 pt-24 xl:pb-20 pb-10 bg-gradient-to-b from-black to-[#121c1c]'>
       <section className='flex md:flex-row flex-col items-center justify-evenly w-full xl:mb-20 mb-5'>
         <Image src={Logo} alt='Image' className='xl:w-[25rem] lg:w-60 md:w-56 w-56' />
         <div className='max-w-[45rem]'>

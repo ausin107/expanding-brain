@@ -1,10 +1,7 @@
 import { twMerge } from 'tailwind-merge'
 import SwapBox from '@/components/SwapBox'
 import AirdropButton from '@/components/Button'
-import InviteBox from '@/components/InviteBox'
-import Image from 'next/image'
-import Blast_Logo from '@/assets/Blast_Logo.webp'
-export default function Home() {
+export default function Swap() {
   return (
     <main
       className={twMerge(
@@ -26,13 +23,7 @@ export default function Home() {
             </AirdropButton>
           </div>
         </article>
-        <aside className='xl:px-5 lg:px-5 flex lg:items-center md:items-start items-center flex-col lg:border-l border-third'>
-          <InviteBox className='' />
-          <section className='flex flex-col lg:items-center md:items-start items-center mt-10'>
-            <h3 className='text-light font-bold mb-5'>BUILT ON</h3>
-            <Image src={Blast_Logo} alt='Blast Logo image' className='xl:w-full' />
-          </section>
-        </aside>
+        <SwapBox />
       </div>
     </main>
   )
