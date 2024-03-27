@@ -21,7 +21,7 @@ function Navbar() {
       )}>
       <Link href='/' className='flex items-center'>
         <Image src={Logo} alt='Image' className='w-20' />
-        <h1 className='text-primary xl:text-3xl lg:text-base md:text-xl text-lg font-bold mr-5 lg:w-full'>
+        <h1 className='text-primary xl:text-2xl lg:text-base md:text-2xl text-lg font-bold mr-5 lg:w-full uppercase'>
           Expanding Brain
         </h1>
       </Link>

@@ -11,16 +11,16 @@ type inviteBoxProps = {
 
 function InviteBox({
   title = 'EXPANDING BRAIN AIRDROP',
-  subTitle = 'Check your eligibily to claim airdrop now',
+  subTitle = 'Check your eligibility to claim airdrop now',
   className,
 }: inviteBoxProps) {
   return (
     <div className={twMerge('flex flex-col lg:items-center md:items-start items-center', className)}>
-      <h3 className='text-lg text-primary font-bold mb-7'>{title}</h3>
-      <p className='text-secondary font-semibold xl:w-4/5 lg:w-full w-4/5 text-center mb-7 lg:text-sm xl:text-base'>
+      <h3 className='lg:text-lg md:text-2xl text-lg text-primary font-bold md:mb-10 mb-7'>{title}</h3>
+      <p className='text-secondary font-semibold xl:w-4/5 lg:w-full w-4/5 lg:text-center md:text-left md:mb-10 mb-7 xl:text-base lg:text-sm text-lg text-center'>
         {subTitle}
       </p>
-      <AirdropButton className='bg-secondary px-20'>JOIN NOW</AirdropButton>
+      <AirdropButton className='bg-secondary px-20'>CHECK NOW</AirdropButton>
     </div>
   )
 }
