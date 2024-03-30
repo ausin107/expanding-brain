@@ -24,7 +24,6 @@ export default function RootLayout({
           <StoreProvider>
             <Navbar />
             {children}
-            <Footer />
           </StoreProvider>
         </Web3Provider>
       </body>
