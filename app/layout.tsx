@@ -2,10 +2,9 @@ import '@rainbow-me/rainbowkit/styles.css'
 import Head from 'next/head'
 import './globals.css'
 import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
 import StoreProvider from './StoreProvider'
 import Web3Provider from './Web3Provider'
-
+import Script from 'next/script'
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -1,7 +1,12 @@
 'use client'
 import { CSSProperties, useEffect, useState } from 'react'
+import { ClassNameValue, twMerge } from 'tailwind-merge'
+type countDownProps = {
+  targetDate: string
+  className?: ClassNameValue
+}
 
-function CountDown({ targetDate }: { targetDate: string }) {
+function CountDown({ targetDate, className }: countDownProps) {
   const [timer, SetTimer] = useState(() => {
     const targetTime = new Date(targetDate).getTime()
     const currentTime = new Date().getTime()
@@ -15,29 +20,33 @@ function CountDown({ targetDate }: { targetDate: string }) {
 
     return () => clearInterval(startCountDown)
   }, [timer])
+  const days = Math.floor(timer / (60 * 60 * 24))
+  const hours = Math.floor((timer % (60 * 60 * 24)) / (60 * 60))
+  const minutes = Math.floor((timer % (60 * 60)) / 60)
+  const seconds = Math.floor(timer % 60)
   return (
-    <div className='grid grid-flow-col gap-5 text-center auto-cols-max mt-10'>
+    <div className={twMerge('grid grid-flow-col gap-5 text-center auto-cols-max', className)}>
       <div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content'>
         <span className='countdown font-mono text-5xl'>
-          <span style={{ '--value': Math.floor(timer / (60 * 60 * 24)) } as CSSProperties}></span>
+          <span style={{ '--value': days } as CSSProperties}></span>
         </span>
         days
       </div>
       <div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content'>
         <span className='countdown font-mono text-5xl'>
-          <span style={{ '--value': Math.floor((timer % (60 * 60 * 24)) / (60 * 60)) } as CSSProperties}></span>
+          <span style={{ '--value': hours } as CSSProperties}></span>
         </span>
         hours
       </div>
       <div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content'>
         <span className='countdown font-mono text-5xl'>
-          <span style={{ '--value': Math.floor((timer % (60 * 60)) / 60) } as CSSProperties}></span>
+          <span style={{ '--value': minutes } as CSSProperties}></span>
         </span>
         min
       </div>
       <div className='flex flex-col p-2 bg-neutral rounded-box text-neutral-content'>
         <span className='countdown font-mono text-5xl'>
-          <span style={{ '--value': Math.floor(timer % 60) } as CSSProperties}></span>
+          <span style={{ '--value': seconds } as CSSProperties}></span>
         </span>
         sec
       </div>
