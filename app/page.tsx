@@ -1,30 +1,87 @@
+'use client'
+import CountDown from '@/components/CountDown'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
+import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
+import Script from 'next/script'
 import { twMerge } from 'tailwind-merge'
-import Image from 'next/image'
-import Blast_Logo from '@/assets/Blast_Logo.webp'
-export default function Home() {
+function Home() {
+  const searchParams = useSearchParams()
+  const title = searchParams.get('title') || 'Welcome to Expanding Brain'
+  const desc = searchParams.get('desc') || 'Claim your $EBC Airdrop'
   return (
-    <main
-      className={twMerge(
-        'w-[100vw] md:h-[95vh] min-h-[95vh] pb-12 md:pb-0 md:overflow-hidden overflow-x-hidden bg-gradient-to-b from-black to-[#121c1c]'
-      )}>
-      <div className='lg:pt-40 md:pt-40 pt-32 h-full flex lg:flex-row flex-col md:w-full lg:justify-between xl:pl-20 lg:pl-8 lg:px-0 md:px-16 px-5 md:items-start lg:items-start justify-normal overflow-hidden'>
-        <article className=''>
-          <div className='lg:max-w-[33rem] md:max-w-[35rem] w-full md:flex lg:block items-start flex-col'>
-            <h2 className='lg:text-4xl md:text-5xl text-3xl font-semibold lg:text-left text-secondary md:mb-10 mb-7 tracking-wide  lg:!leading-[3rem] md:!leading-[3.5rem] uppercase'>
-              The Community Coin of Blast
-            </h2>
-            <p className='text-[#ccd4e0] font-semibold md:text-xl text-lg md:mb-10 mb-7 lg:text-left md:!leading-10'>
-              New Ethereum game! Join & earn! Calling builders, creators & crypto enthusiasts!
-            </p>
+    <main className='lg:h-auto h-fit md:h-screen min-h-screen flex flex-col items-center lg:pt-32 md:pt-40 pt-24 pb-16 px-5 bg-gradient-to-b from-black to-[#121c1c]'>
+      <div className='flex flex-col items-center justify-center xl:mb-10 lg:mb-8 mb-10 xl:py-10 xl:px-32 lg:py-8 lg:px-28 md:py-10 md:px-12 py-7 px-12 md:border-8 border-4 border-third border-opacity-30'>
+        <h1 className='xl:text-4xl lg:text-2xl md:text-4xl text-xl text-center font-bold text-primary mb-5'>{title}</h1>
+        <h3 className='text-secondary xl:text-2xl lg:text-lg md:text-xl text-base text-center font-bold'>{desc}</h3>
+      </div>
+      <h5 className='text-secondary lg:text-2xl md:text-3xl text-xl mb-8 text-center'>
+        Connect Your Wallet to to Use the dAPP
+      </h5>
+      <div className='md:mb-0 mb-14'>
+        <div className={twMerge('flex items-center flex-col md:mb-10 mb-5 flex-wrap')}>
+          <ConnectButton.Custom>
+            {({ account, chain, openConnectModal, mounted, openAccountModal }) => {
+              const ready = mounted
+              const connected = ready && account && chain
+              return (
+                <div
+                  {...(!ready && {
+                    'aria-hidden': true,
+                    style: {
+                      opacity: 0,
+                      pointerEvents: 'none',
+                      userSelect: 'none',
+                    },
+                  })}>
+                  {(() => {
+                    if (!connected) {
+                      return (
+                        <button
+                          onClick={openConnectModal}
+                          className={twMerge(
+                            'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
+                          )}>
+                          Connect walllet
+                        </button>
+                      )
+                    }
+                    if (connected)
+                      return (
+                        <button
+                          onClick={openAccountModal}
+                          type='button'
+                          className={twMerge(
+                            'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 rounded-lg hover:bg-red-600 hover:scale-105 bg-secondary text-black font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
+                          )}>
+                          {account.displayName}
+                        </button>
+                      )
+                  })()}
+                </div>
+              )
+            }}
+          </ConnectButton.Custom>
+          <div className='flex flex-col items-center justify-center mt-8'>
+            <h5 className='mb-8 text-lg'>Try our dapp in</h5>
+            <CountDown targetDate='2024-04-09' />
           </div>
-        </article>
-        <aside className='h-[90%] xl:px-10 lg:px-5 flex lg:items-center md:items-start items-center flex-col lg:border-l border-third md:border-t-0 md:pt-0 border-t pt-7'>
-          <section className='flex flex-col lg:items-center md:items-start items-center'>
-            <h3 className='text-light font-bold lg:mb-5 mb-7'>BUILT ON</h3>
-            <Image src={Blast_Logo} alt='Blast Logo image' className='xl:w-full' />
-          </section>
-        </aside>
+        </div>
+      </div>
+      <div className='absolute bottom-0 w-full h-14 flex items-center justify-end md:px-10 px-5'>
+        <Link
+          href='https://expandingbrain.ai/privacy.php'
+          className='hover:text-primary md:mr-10 mr-5 md:text-base text-sm'>
+          Privacy
+        </Link>
+        <Link
+          href='https://expandingbrain.ai/terms-and-conditions.php'
+          className='hover:text-primary md:text-base text-sm'>
+          Terms and Conditions
+        </Link>
       </div>
     </main>
   )
 }
+
+export default Home
