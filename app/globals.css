@@ -4,12 +4,9 @@
 
 @font-face {
   font-family: 'Geom Graphic W03 Regular';
-  src: url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.eot');
-  src: url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.eot?#iefix') format('embedded-opentype'),
-    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.woff2') format('woff2'),
-    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.woff') format('woff'),
-    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.ttf') format('truetype'),
-    url('https://db.onlinewebfonts.com/t/b0b8a10e9c97391e66297c8b5398984f.svg#Geom Graphic W03 Regular') format('svg');
+  src: url('/fonts/Geom\ Graphic\ W03\ Regular.woff2') format('woff2'),
+    url('/fonts/Geom\ Graphic\ W03\ Regular.woff') format('woff'),
+    url('/fonts/Geom\ Graphic\ W03\ Regular.ttf') format('truetype');
 }
 body {
   font-family: 'Geom Graphic W03 Regular';

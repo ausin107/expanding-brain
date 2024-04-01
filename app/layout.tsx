@@ -2,9 +2,10 @@ import '@rainbow-me/rainbowkit/styles.css'
 import Head from 'next/head'
 import './globals.css'
 import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
 import StoreProvider from './StoreProvider'
 import Web3Provider from './Web3Provider'
+import MainContainer from '@/components/MainContainer'
+import { Suspense } from 'react'
 
 export default function RootLayout({
   children,
@@ -22,9 +23,10 @@ export default function RootLayout({
       <body className='w-[100vw] overflow-x-hidden relative'>
         <Web3Provider>
           <StoreProvider>
-            <Navbar />
-            {children}
-            <Footer />
+            <Suspense>
+              <Navbar />
+            </Suspense>
+            <MainContainer>{children}</MainContainer>
           </StoreProvider>
         </Web3Provider>
       </body>

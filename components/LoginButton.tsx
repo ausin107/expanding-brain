@@ -1,5 +1,5 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
-import Image from 'next/image'
+import { Fragment } from 'react'
 
 export const LoginButton = () => {
   return (
@@ -28,7 +28,7 @@ export const LoginButton = () => {
                   </button>
                 )
               }
-              if (chain.unsupported) {
+              if (chain?.unsupported) {
                 return (
                   <button
                     onClick={openChainModal}
@@ -38,13 +38,19 @@ export const LoginButton = () => {
                   </button>
                 )
               }
+
               return (
-                <button
-                  onClick={openAccountModal}
-                  type='button'
-                  className='xl:text-lg lg:text-base md:text-xs font-bold bg-secondary hover:scale-105 text-black py-3 px-5 rounded-lg'>
-                  {account.displayName}
-                </button>
+                <Fragment>
+                  <button
+                    onClick={openAccountModal}
+                    type='button'
+                    className='xl:text-lg lg:text-base md:text-xs font-bold bg-secondary hover:scale-105 text-black py-3 px-5 rounded-lg hidden md:block'>
+                    {account?.displayName}
+                  </button>
+                  <div className='block md:hidden'>
+                    <ConnectButton accountStatus='avatar' />
+                  </div>
+                </Fragment>
               )
             })()}
           </div>
