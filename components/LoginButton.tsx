@@ -1,6 +1,5 @@
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { Fragment } from 'react'
-import { sendTwitterConversion } from '@/utils/twitterTracking'
 export const LoginButton = () => {
   return (
     <ConnectButton.Custom>

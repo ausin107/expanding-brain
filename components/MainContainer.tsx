@@ -49,7 +49,7 @@ function MainContainer({ children, className }: mainContainerProps) {
                           className={twMerge(
                             'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
                           )}>
-                          Connect walllet
+                          Connect wallet
                         </button>
                       )
                     }
