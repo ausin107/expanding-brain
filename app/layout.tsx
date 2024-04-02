@@ -6,7 +6,7 @@ import StoreProvider from './StoreProvider'
 import Web3Provider from './Web3Provider'
 import MainContainer from '@/components/MainContainer'
 import { Suspense } from 'react'
-
+import Script from 'next/script'
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -14,6 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <Script src='/initTwitter.js' strategy='lazyOnload' />
       <Head>
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />

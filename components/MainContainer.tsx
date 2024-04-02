@@ -6,7 +6,7 @@ import { ClassNameValue } from 'tailwind-merge'
 import WelcomeBox from './WelcomeBox'
 import CountDown from './CountDown'
 import { Suspense } from 'react'
-
+import { sendTwitterConversion } from '@/utils/twitterTracking'
 type mainContainerProps = {
   children?: React.ReactNode
   className?: ClassNameValue
@@ -14,7 +14,7 @@ type mainContainerProps = {
 
 function MainContainer({ children, className }: mainContainerProps) {
   return (
-    <main className='lg:h-auto h-fit md:h-screen min-h-screen flex flex-col items-center lg:pt-32 md:pt-40 pt-24 pb-16 px-5 bg-gradient-to-b from-black to-[#121c1c]'>
+    <main className='lg:h-auto h-fit md:h-screen min-h-screen flex flex-col items-center lg:pt-32 md:pt-40 pt-24 px-5 bg-gradient-to-b from-black to-[#121c1c]'>
       <Suspense>
         <WelcomeBox />
       </Suspense>
@@ -27,6 +27,10 @@ function MainContainer({ children, className }: mainContainerProps) {
             {({ account, chain, openConnectModal, mounted, openAccountModal }) => {
               const ready = mounted
               const connected = ready && account && chain
+              const buttonTracking = () => {
+                openConnectModal()
+                sendTwitterConversion()
+              }
               return (
                 <div
                   {...(!ready && {
@@ -41,7 +45,7 @@ function MainContainer({ children, className }: mainContainerProps) {
                     if (!connected) {
                       return (
                         <button
-                          onClick={openConnectModal}
+                          onClick={buttonTracking}
                           className={twMerge(
                             'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
                           )}>
@@ -66,20 +70,20 @@ function MainContainer({ children, className }: mainContainerProps) {
             }}
           </ConnectButton.Custom>
           <div className='flex flex-col items-center justify-center mt-8'>
-            <h5 className='mb-8 text-lg'>Try our dapp in</h5>
+            <h5 className='mb-8 text-lg text-secondary'>Try our dapp in</h5>
             <CountDown targetDate='2024-04-09' />
           </div>
         </div>
       </div>
-      <div className='absolute bottom-0 w-full h-14 flex items-center justify-end md:px-10 px-5'>
+      <div className='absolute bottom-0 w-full h-[4.5rem] flex items-center justify-end md:px-10 px-5'>
         <Link
           href='https://expandingbrain.ai/privacy.php'
-          className='hover:text-primary md:mr-10 mr-5 md:text-base text-sm'>
+          className='hover:text-primary md:mr-10 mr-5 md:text-base text-sm text-secondary'>
           Privacy
         </Link>
         <Link
           href='https://expandingbrain.ai/terms-and-conditions.php'
-          className='hover:text-primary md:text-base text-sm'>
+          className='hover:text-primary md:text-base text-sm text-secondary'>
           Terms and Conditions
         </Link>
       </div>
