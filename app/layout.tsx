@@ -7,6 +7,10 @@ import Web3Provider from './Web3Provider'
 import MainContainer from '@/components/MainContainer'
 import { Suspense } from 'react'
 import Script from 'next/script'
+import localFont from 'next/font/local'
+import { twMerge } from 'tailwind-merge'
+const geomGraphic = localFont({ src: '../public/fonts/Geom Graphic W03 Regular.woff2' })
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -21,7 +25,7 @@ export default function RootLayout({
         <title>Expanding Brain</title>
         <link rel='icon' href='/favicon.ico' sizes='any' />
       </Head>
-      <body className='w-[100vw] overflow-x-hidden relative'>
+      <body className={twMerge('w-[100vw] overflow-x-hidden relative', geomGraphic.className)}>
         <Web3Provider>
           <StoreProvider>
             <Suspense>
