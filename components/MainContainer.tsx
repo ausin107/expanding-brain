@@ -19,7 +19,7 @@ function MainContainer({ children, className }: mainContainerProps) {
         <WelcomeBox />
       </Suspense>
       <h5 className='text-secondary lg:text-2xl md:text-3xl text-xl mb-8 text-center'>
-        Connect Your Wallet to to Use the dAPP
+        Connect Your Wallet to Use the dAPP
       </h5>
       <div className='md:mb-0 mb-14'>
         <div className={twMerge('flex items-center flex-col md:mb-10 mb-5 flex-wrap')}>
