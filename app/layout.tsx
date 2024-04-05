@@ -4,7 +4,6 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import StoreProvider from './StoreProvider'
 import Web3Provider from './Web3Provider'
-import MainContainer from '@/components/MainContainer'
 import { Suspense } from 'react'
 import Script from 'next/script'
 import localFont from 'next/font/local'
@@ -31,7 +30,7 @@ export default function RootLayout({
             <Suspense>
               <Navbar />
             </Suspense>
-            <MainContainer>{children}</MainContainer>
+            {children}
           </StoreProvider>
         </Web3Provider>
       </body>
