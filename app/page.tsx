@@ -71,14 +71,10 @@ function Home() {
         </div>
       </div>
       <div className='absolute bottom-0 w-full h-[4.5rem] flex items-center justify-end md:px-10 px-5'>
-        <Link
-          href='https://expandingbrain.ai/privacy.php'
-          className='hover:text-primary md:mr-10 mr-5 md:text-base text-sm text-secondary'>
+        <Link href='/privacy' className='hover:text-primary md:mr-10 mr-5 md:text-base text-sm text-secondary'>
           Privacy
         </Link>
-        <Link
-          href='https://expandingbrain.ai/terms-and-conditions.php'
-          className='hover:text-primary md:text-base text-sm text-secondary'>
+        <Link href='/terms' className='hover:text-primary md:text-base text-sm text-secondary'>
           Terms and Conditions
         </Link>
       </div>
