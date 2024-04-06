@@ -5,18 +5,20 @@ import React from 'react'
 function Privacy() {
   return (
     <>
-      <div className='lg:h-auto h-fit md:h-screen min-h-screen flex flex-col items-center lg:pt-32 md:pt-40 pt-24 px-5 bg-gradient-to-b from-black to-[#121c1c] xl:px-40 md:px-0 pb-20'>
-        <BreadCrumb title='Home' url='/' className='self-start mb-7' />
-        <h1 className='text-secondary font-bold xl:text-5xl mb-16'>Privacy of Expanding Brain</h1>
-        <p className='text-third lg:text-xl lg:mb-7'>
+      <div className='lg:h-auto h-fit min-h-screen flex flex-col items-center lg:pt-32 md:pt-24 pt-20 px-5 bg-gradient-to-b from-black to-[#121c1c] xl:px-20 lg:px-8 md:px-14 pb-20'>
+        <BreadCrumb title='Home' url='/' className='self-start md:mb-7 mb-4' />
+        <h1 className='text-secondary font-bold xl:text-5xl lg:text-4xl md:text-3xl text-xl xl:mb-14 lg:mb-10 mb-7'>
+          Privacy of Expanding Brain
+        </h1>
+        <p className='text-third lg:text-xl lg:mb-7 mb-4'>
           At connectwallet.app, we are committed to safeguarding the privacy of our website visitors and users. This
           Privacy Policy outlines how we collect, use, disclose, and protect your personal information. By accessing or
           using connectwallet.app, you agree to the terms of this Privacy Policy.
         </p>
-        <ol className='list-decimal text-secondary xl:text-xl px-10'>
+        <ol className='list-decimal text-secondary xl:text-xl md:px-10 px-5'>
           <li className='mb-5'>
             <strong className='lg:text-xl'>Information We Collect:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li className='mb-3'>
                 <strong className='text-secondary'>Personal Information:</strong> When you visit connectwallet.app or
                 use our services, we may collect personal information such as your name, email address, contact details,
@@ -36,11 +38,11 @@ function Privacy() {
           </li>
           <li className='mb-5'>
             <strong className='lg:text-xl'>How We Use Your Information:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li className='mb-3'>
                 We may use the information we collect for various purposes, including but not limited to:
               </li>
-              <ul className='px-3'>
+              <ul className='md:px-3 px-0'>
                 <li className='flex'>
                   <svg
                     className='fill-none mr-2'
@@ -142,7 +144,7 @@ function Privacy() {
           </li>
           <li className='mb-5'>
             <strong className='lg:text-xl'>Information Sharing:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li className='mb-3'>
                 We do not sell, trade, or rent your personal information to third parties for their marketing purposes.
                 However, we may share your information with trusted third-party service providers who assist us in
@@ -156,7 +158,7 @@ function Privacy() {
           </li>
           <li className='mb-5'>
             <strong className='lg:text-xl'>Cookies and Tracking Technologies:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li>
                 We use cookies and similar tracking technologies to enhance your experience on connectwallet.app,
                 analyze usage patterns, and personalize content. You can manage your cookie preferences through your
@@ -166,7 +168,7 @@ function Privacy() {
           </li>
           <li className='mb-5'>
             <strong className='lg:text-xl'>Data Security:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li>
                 We implement appropriate security measures to protect your personal information from unauthorized
                 access, alteration, disclosure, or destruction.
@@ -175,7 +177,7 @@ function Privacy() {
           </li>
           <li className='mb-5'>
             <strong className='lg:text-xl'>Your Rights:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li>
                 You have the right to access, correct, or delete your personal information held by connectwallet.app.
                 You may also opt-out of receiving marketing communications from us.
@@ -184,7 +186,7 @@ function Privacy() {
           </li>
           <li className='mb-5'>
             <strong className='lg:text-xl'>Children`&apos;`s Privacy:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li>
                 Our website and services are not directed to individuals under the age of 13. We do not knowingly
                 collect personal information from children. If you are a parent or guardian and believe that your child
@@ -195,7 +197,7 @@ function Privacy() {
           </li>
           <li className='mb-5'>
             <strong className='lg:text-xl'>Changes to this Privacy Policy:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li>
                 We reserve the right to update or modify this Privacy Policy at any time. Any changes will be effective
                 immediately upon posting the revised Privacy Policy on connectwallet.app.
@@ -204,7 +206,7 @@ function Privacy() {
           </li>
           <li className='mb-7'>
             <strong className='lg:text-xl'>Contact Us:</strong>
-            <ul className='list-disc text-third mt-4 px-4'>
+            <ul className='list-disc text-third mt-4 md:px-4 px-0'>
               <li>
                 If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact
                 us at{' '}
