@@ -6,7 +6,7 @@ import { LoginButton } from './LoginButton'
 function Navbar() {
   const pathName = usePathname()
   const searchParams = useSearchParams()
-  const title = searchParams?.get('title') || 'Expanding Brain'
+  const title = searchParams?.get('title') || 'Connect Wallet'
   return (
     <header
       className={twMerge(

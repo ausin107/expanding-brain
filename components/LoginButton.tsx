@@ -22,7 +22,7 @@ export const LoginButton = () => {
                   <button
                     onClick={openConnectModal}
                     type='button'
-                    className='bg-[#2422e5] hover:scale-105 text-white py-3 px-5 rounded-lg lg:text-lg md:text-sm font-bold'>
+                    className='bg-[#2422e5] hover:scale-105 text-white py-3 px-5 rounded-lg md:text-lg text-sm font-bold'>
                     Connect
                   </button>
                 )
@@ -32,8 +32,8 @@ export const LoginButton = () => {
                   <button
                     onClick={openChainModal}
                     type='button'
-                    className='bg-red-600 hover:scale-105 text-white py-3 px-5 rounded-lg text-lg font-bold'>
-                    Wrong network
+                    className='bg-red-600 hover:scale-105 text-white py-3 px-5 rounded-lg md:text-lg text-sm font-bold'>
+                    Incorrect
                   </button>
                 )
               }
