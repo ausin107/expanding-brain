@@ -8,7 +8,7 @@ function Term() {
       <div className='lg:h-auto h-fit min-h-screen flex flex-col items-center lg:pt-32 md:pt-24 pt-20 px-5 bg-gradient-to-b from-black to-[#121c1c] xl:px-20 lg:px-8 md:px-14 pb-20'>
         <BreadCrumb title='Home' url='/' className='self-start md:mb-7 mb-4' />
         <h1 className='text-secondary font-bold xl:text-5xl lg:text-4xl md:text-4xl text-xl xl:mb-14 lg:mb-10 mb-7 text-center'>
-          Terms and Conditions of Expanding Brain
+          Terms and Conditions of Connect Wallet
         </h1>
         <p className='text-third lg:text-xl lg:mb-7 mb-4'>
           These Terms and Conditions govern your access to and use of the connectwallet.app website. By accessing or
