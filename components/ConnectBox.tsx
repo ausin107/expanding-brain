@@ -34,7 +34,7 @@ function ConnectBox() {
                       <button
                         onClick={buttonTracking}
                         className={twMerge(
-                          'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg hover:bg-[#2422e5] text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
+                          'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 border-4 border-[#2422e5] rounded-lg bg-[#2422e5] hover:scale-105 text-secondary font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
                         )}>
                         Connect wallet
                       </button>
