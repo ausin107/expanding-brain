@@ -10,8 +10,8 @@ function Home() {
     <main className='lg:h-auto h-fit md:h-screen min-h-screen flex flex-col items-center lg:pt-32 md:pt-40 pt-24 px-5 bg-gradient-to-b from-black to-[#121c1c]'>
       <Suspense>
         <WelcomeBox />
+        <ConnectBox />
       </Suspense>
-      <ConnectBox />
       <div className='flex flex-col items-center justify-center mt-8 md:mb-10 mb-5'>
         <h5 className='mb-8 text-lg text-secondary'>Try our dapp in</h5>
         <CountDown targetDate='2024-04-27' />

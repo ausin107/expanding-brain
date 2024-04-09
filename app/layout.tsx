@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <Script src='/initTwitter.js' strategy='lazyOnload' />
+      <Script type='text/javascript' src='//script.crazyegg.com/pages/scripts/0123/1324.js' async />
       <Head>
         <meta charSet='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
