@@ -1,11 +1,11 @@
 {
-  "name": "go.connectwallet.app",
+  "name": "connectwallet.pro",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 2300",
+    "start": "next start -p 2400",
     "lint": "next lint"
   },
   "dependencies": {
