@@ -8,13 +8,11 @@ import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import { createWeb3Modal } from '@web3modal/wagmi/react'
 const { wallets } = getDefaultWallets()
 
-const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || ''
-
 const config = getDefaultConfig({
   appName: 'Expanding Brain',
   appUrl: 'http://connect.expandingbrain.ai/',
   appDescription: 'Expanding Brain Connect',
-  projectId,
+  projectId: `${process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID}`,
   wallets: [
     ...wallets,
     {
@@ -30,7 +28,7 @@ const queryClient = new QueryClient()
 
 createWeb3Modal({
   wagmiConfig: config,
-  projectId,
+  projectId: `${process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID}`,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
   enableOnramp: true, // Optional - false as default
 })
