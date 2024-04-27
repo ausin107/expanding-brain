@@ -14,7 +14,7 @@ function Home() {
       </Suspense>
       <div className='flex flex-col items-center justify-center mt-8 md:mb-10 mb-5'>
         <h5 className='mb-8 text-lg text-secondary'>Try our dapp in</h5>
-        <CountDown targetDate='2024-04-27' />
+        <CountDown targetDate='2024-05-20' />
       </div>
       <div className='absolute bottom-0 w-full h-[4.5rem] flex items-center justify-end md:px-10 px-5'>
         <Link
