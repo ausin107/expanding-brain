@@ -4,11 +4,14 @@ import { argentWallet, trustWallet, ledgerWallet } from '@rainbow-me/rainbowkit/
 import { WagmiProvider } from 'wagmi'
 import { blast } from 'wagmi/chains'
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
-
+import { createWeb3Modal } from '@web3modal/wagmi/react'
 const { wallets } = getDefaultWallets()
+const queryClient = new QueryClient()
 
 const config = getDefaultConfig({
-  appName: 'RainbowKit demo',
+  appName: 'Expanding Brain',
+  appUrl: 'https://connectwallet.pro/',
+  appDescription: 'Connect Wallet',
   projectId: `${process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID}`,
   wallets: [
     ...wallets,
@@ -20,7 +23,12 @@ const config = getDefaultConfig({
   chains: [blast],
   ssr: true,
 })
-const queryClient = new QueryClient()
+createWeb3Modal({
+  wagmiConfig: config,
+  projectId: `${process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID}`,
+  enableAnalytics: true, // Optional - defaults to your Cloud configuration
+  enableOnramp: true, // Optional - false as default
+})
 function Web3Provider({ children }: { children: React.ReactNode }) {
   return (
     <WagmiProvider config={config}>
