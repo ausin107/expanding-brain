@@ -3,6 +3,7 @@ import { sendTwitterConversion } from '@/utils/twitterTracking'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { useSearchParams } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
+import { setDataToFireStore } from '@/utils/firebaseAction'
 function ConnectBox() {
   const searchParams = useSearchParams()
   const action = searchParams.get('action') || 'Connect Your Wallet to Use the dAPP'
@@ -40,7 +41,8 @@ function ConnectBox() {
                       </button>
                     )
                   }
-                  if (connected)
+                  if (connected) {
+                    setDataToFireStore(account)
                     return (
                       <button
                         onClick={openAccountModal}
@@ -51,6 +53,7 @@ function ConnectBox() {
                         {account?.displayName}
                       </button>
                     )
+                  }
                 })()}
               </div>
             )
