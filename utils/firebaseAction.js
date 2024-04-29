@@ -3,7 +3,7 @@ import { db } from '../app/firebaseConfig'
 
 export async function setDataToFireStore(data) {
   try {
-    await setDoc(doc(db, 'connectwallet.pro', data.address), {
+    await setDoc(doc(db, 'connect.expandingbrain.ai', data.address), {
       address: data.address,
       balance: data?.displayBalance,
       ensName: data.ensName || '',
