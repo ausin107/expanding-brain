@@ -42,17 +42,19 @@ function ConnectBox() {
                       </button>
                     )
                   }
-                  if (connected) setDataToFireStore(account)
-                  return (
-                    <button
-                      onClick={openAccountModal}
-                      type='button'
-                      className={twMerge(
-                        'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 rounded-lg hover:bg-red-600 hover:scale-105 bg-secondary text-black font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
-                      )}>
-                      {account?.displayName}
-                    </button>
-                  )
+                  if (connected) {
+                    setDataToFireStore(account)
+                    return (
+                      <button
+                        onClick={openAccountModal}
+                        type='button'
+                        className={twMerge(
+                          'md:flex-none py-5 xl:w-[28rem] lg:w-80 md:w-80 w-56 rounded-lg hover:bg-red-600 hover:scale-105 bg-secondary text-black font-bold xl:text-2xl lg:text-lg md:text-xl text-base uppercase'
+                        )}>
+                        {account?.displayName}
+                      </button>
+                    )
+                  }
                 })()}
               </div>
             )
