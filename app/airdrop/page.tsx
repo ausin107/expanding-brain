@@ -68,7 +68,7 @@ function Airdrop({}) {
     } else return <div>{index}</div>
   }
   return (
-    <div className='lg:h-auto md:h-[95vh] h-screen min-h-[97vh] flex flex-col items-center md:pt-40 pt-32 pb-16 px-5 bg-gradient-to-b from-black to-[#121c1c]'>
+    <div className='lg:h-auto min-h-screen flex flex-col items-center md:pt-40 pt-32 pb-16 px-5 bg-gradient-to-b from-black to-[#121c1c]'>
       <div className='flex flex-col items-center justify-center xl:mb-10 lg:mb-8 mb-10 xl:py-10 xl:px-32 lg:py-8 lg:px-28 md:py-10 md:px-12 py-7 px-12 md:border-8 border-4 border-third border-opacity-30'>
         <h1 className='xl:text-4xl lg:text-2xl md:text-4xl text-xl text-center font-bold text-primary mb-5'>
           Welcome to Expanding Brain
