@@ -2,7 +2,7 @@
 import { getDefaultConfig, getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit'
 import { argentWallet, trustWallet, ledgerWallet } from '@rainbow-me/rainbowkit/wallets'
 import { WagmiProvider } from 'wagmi'
-import { blast } from 'wagmi/chains'
+import { mainnet, polygon } from 'wagmi/chains'
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 
 const { wallets } = getDefaultWallets()
@@ -17,7 +17,7 @@ const config = getDefaultConfig({
       wallets: [argentWallet, trustWallet, ledgerWallet],
     },
   ],
-  chains: [blast],
+  chains: [mainnet, polygon],
   ssr: true,
 })
 const queryClient = new QueryClient()

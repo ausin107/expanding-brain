@@ -2,7 +2,6 @@ import '@rainbow-me/rainbowkit/styles.css'
 import Head from 'next/head'
 import './globals.css'
 import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
 import StoreProvider from './StoreProvider'
 import Web3Provider from './Web3Provider'
 
@@ -24,7 +23,6 @@ export default function RootLayout({
           <StoreProvider>
             <Navbar />
             {children}
-            <Footer />
           </StoreProvider>
         </Web3Provider>
       </body>

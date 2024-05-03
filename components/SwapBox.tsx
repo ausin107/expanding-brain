@@ -3,40 +3,40 @@ import { useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 function SwapBox({}) {
-  const [option, setOption] = useState({ id: 0, name: 'ETH' })
+  const [option, setOption] = useState({ id: 0, name: 'SOL' })
   const handleOption = (id: number, name: string) => {
     setOption({ id, name })
   }
   return (
     <aside className='xl:w-[32rem] lg:w-[25rem] md:w-[35rem] md:h-[30rem] xl:h-[33rem] lg:h-[32rem] lg:mr-10 py-5 px-4 md:mb-0 mb-10 h-[40rem] lg:border-2 rounded-xl border-secondary flex flex-col justify-around bg-[#00000080]'>
       <h1 className='lg:text-2xl md:text-3xl text-xl text-primary font-bold text-center drop-shadow-[0_0_5px_#007bff]'>
-        BUY AND STAKE <span className='text-[#FCFC03]'>$EBC</span> FOR 10% DISCOUNT
+        BUY AND STAKE <span className='text-[#FCFC03]'>$EXPC</span> FOR 10% DISCOUNT
       </h1>
-      <p className='text-white text-center'>Buy and stake $EBC to earn rewards, plus qualify for the huge airdrop!</p>
+      <p className='text-white text-center'>Buy and stake $EXPC to earn rewards, plus qualify for the huge airdrop!</p>
       <div className='flex justify-between w-full '>
         <button
-          onClick={() => handleOption(0, 'ETH')}
+          onClick={() => handleOption(0, 'SOL')}
           className={twMerge(
             'xl:py-3 xl:px-10 lg:py-2 lg:px-8 md:py-3 md:px-12 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide opacity-40',
             option.id == 0 && 'opacity-100'
           )}>
-          ETH
+          SOL
         </button>
         <button
-          onClick={() => handleOption(1, 'USDT')}
+          onClick={() => handleOption(1, 'ETH')}
           className={twMerge(
             'xl:py-3 xl:px-10 lg:py-2 lg:px-8 md:py-3 md:px-12 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide opacity-40',
             option.id == 1 && 'opacity-100'
           )}>
-          USDT
+          ETH
         </button>
         <button
-          onClick={() => handleOption(2, 'CARD')}
+          onClick={() => handleOption(2, 'USDT')}
           className={twMerge(
             'xl:py-3 xl:px-10 lg:py-2 lg:px-8 md:py-3 md:px-12 py-2 px-6 rounded-lg bg-secondary hover:bg-white drop-shadow-btn font-bold tracking-wide opacity-40',
             option.id == 2 && 'opacity-100'
           )}>
-          CARD
+          USDT
         </button>
       </div>
       <div className='flex md:flex-row flex-col items-center justify-between'>
@@ -49,7 +49,7 @@ function SwapBox({}) {
           />
         </div>
         <div className='md:w-[48%] w-full border-secondary rounded-lg border-2 py-1 px-5 bg-[#000000a6]'>
-          <h5 className='text-sm text-secondary font-semibold'>Receive $EBC</h5>
+          <h5 className='text-sm text-secondary font-semibold'>Receive $EXPC</h5>
           <input
             placeholder='0'
             type='number'

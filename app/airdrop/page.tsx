@@ -74,7 +74,7 @@ function Airdrop({}) {
           Welcome to Expanding Brain
         </h1>
         <h3 className='text-secondary xl:text-2xl lg:text-lg md:text-xl text-base text-center font-bold'>
-          Claim your $EBC Airdrop
+          Claim your $EXPC Airdrop
         </h3>
       </div>
       <h5 className='text-secondary lg:text-2xl md:text-3xl text-xl mb-8'>Verify Your Eligibility</h5>

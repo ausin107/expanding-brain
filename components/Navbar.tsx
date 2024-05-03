@@ -17,7 +17,7 @@ function Navbar() {
     <header
       className={twMerge(
         'w-[100vw] xl:px-20 xl:py-6 lg:px-8 lg:py-6 md:py-5 md:px-14 pt-2 px-6 fixed top-0 z-10 flex flex-row items-center justify-between lg:justify-normal lg:border-b border-third navbar-bg',
-        pathName == '/' && 'border-none md:bg-transparent navbar-bg'
+        (pathName == '/' || pathName == '/swap') && 'border-none md:bg-transparent navbar-bg'
       )}>
       <Link href='/' className='flex items-center'>
         <Image src={Logo} alt='Image' className='w-20' />
