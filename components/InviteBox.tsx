@@ -1,5 +1,4 @@
 'use client'
-import { useRef, useState } from 'react'
 import AirdropButton from '@/components/Button'
 import { ClassNameValue, twMerge } from 'tailwind-merge'
 

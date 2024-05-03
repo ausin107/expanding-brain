@@ -7,31 +7,45 @@ function About() {
     <div className='w-[100vw] min-h-screen xl:pt-40 xl:px-40 lg:pt-32 md:pt-28 md:px-14 px-5 pt-24 xl:pb-20 pb-10 bg-gradient-to-b from-black to-[#121c1c]'>
       <section className='xl:mb-20 mb-5 md:pt-10 pt-5'>
         <p className='text-third font-bold xl:text-2xl xl:mb-16 md:mb-10 mb-7'>
-          Welcome to Expanding Brain, where we&apos;re not just revolutionizing GPU computing rental and AI – we&apos;re
-          redefining the very essence of decentralized computing. Built on the Solana blockchain, Expanding Brain
-          represents a paradigm shift in how we harness the immense power of CPUs and GPUs.
+          Welcome to Connect Wallet, the revolutionary cryptocurrency platform where users wield the power to shape the
+          trajectory of digital currencies. In a landscape dominated by the agendas of big tech and centralized
+          authorities, Connect Wallet stands as a beacon of empowerment, championing the principles of decentralization,
+          community governance, and user-centricity.
           <br />
           <br />
-          Imagine a world where computing power isn&apos;t concentrated in the hands of a few, but distributed across a
-          decentralized network of individuals and businesses. That&apos;s the vision driving Expanding Brain. Our
-          platform taps into the latent potential of GPUs, transforming them from mere hardware components into valuable
-          assets within a global ecosystem.
+          At Connect Wallet, we recognize the inherent potential of blockchain technology to democratize finance and
+          foster inclusive participation in the global economy. However, we also acknowledge the limitations of existing
+          systems, where decisions about cryptocurrency features, functionalities, and priorities are often made behind
+          closed doors by a select few.
           <br />
           <br />
-          At Expanding Brain, we&apos;re not just building a cryptocurrency – we&apos;re building a community. GPU
-          owners become active participants in our network, contributing their computing resources to process AI and
-          machine learning applications. In return, they&apos;re rewarded with Brain Coin ($EXBC), a digital currency
-          that represents their stake in the future of decentralized computing.
+          That&apos;s why we&apos;ve built Connect Wallet – to put control back where it belongs, in the hands of the
+          people. Our platform empowers users to actively participate in governance decisions, ensuring that the
+          direction of cryptocurrency development reflects the collective will of the community, rather than the
+          interests of centralized entities.
           <br />
           <br />
-          But Expanding Brain isn&apos;t just about rewarding GPU owners – it&apos;s about empowering developers and
-          businesses with access to unprecedented computing power. Whether you&apos;re a researcher tackling complex AI
-          algorithms or a startup developing cutting-edge machine learning applications, Expanding Brain provides the
-          infrastructure you need to succeed.
+          Through a transparent and democratic voting process, users can propose, debate, and ultimately decide on key
+          aspects of cryptocurrency design and implementation. Whether it&apos;s determining the allocation of funds,
+          defining consensus mechanisms, or shaping governance protocols, every user has a voice and a vote in shaping
+          the future of digital currencies.
           <br />
           <br />
-          Join us as we embark on this journey to unlock the full potential of decentralized GPU networks. Together,
-          we&apos;ll shape the future of computing and pave the way for a more inclusive and equitable digital economy.
+          But Connect Wallet is more than just a governance platform – it&apos;s a vibrant community of individuals
+          united by a shared vision of a more equitable and user-centric financial system. Here, users from all walks of
+          life come together to exchange ideas, share insights, and collaborate on initiatives that advance the
+          principles of decentralization and empowerment.
+          <br />
+          <br />
+          Whether you&apos;re a seasoned crypto enthusiast, a passionate advocate for financial inclusion, or someone
+          who simply wants a say in the future of finance, Connect Wallet welcomes you with open arms. Join us as we
+          embark on this journey to redefine the landscape of cryptocurrency – one vote, one decision, and one user at a
+          time.
+          <br />
+          <br />
+          Together, we&apos;ll create a more democratic, transparent, and inclusive digital economy, where the power to
+          innovate and shape the future resides firmly in the hands of the people. Welcome to Connect Wallet – where
+          your voice matters, and your choices shape the future.
         </p>
         <h3 className='text-secondary xl:text-2xl lg:text-xl md:text-lg md:mb-10 mb-7 font-semibold'>
           Legal Disclaimers
@@ -65,7 +79,7 @@ function About() {
           $EXPC is not a loan to any entity and there is no expectation of profit nor interest payment.
           <br />
           <br />
-          Users are acquiring $EXPC to participate in Expanding Brain and to obtain services on the ecosystem thereon.
+          Users are acquiring $EXPC to participate in Connect Wallet and to obtain services on the ecosystem thereon.
           <br />
           <br />
           $EXPC may have no value and there is no guarantee or representation of value or liquidity for $EXPC.

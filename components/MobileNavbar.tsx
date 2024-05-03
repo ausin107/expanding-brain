@@ -5,8 +5,6 @@ import { ClassNameValue, twMerge } from 'tailwind-merge'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import { ConnectButton } from '@rainbow-me/rainbowkit'
-
 type MobileProps = {
   className?: ClassNameValue
 }

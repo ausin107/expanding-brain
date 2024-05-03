@@ -1,28 +1,20 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
-import { openSidebar, closeSidebar } from '@/lib/features/sidebarSlice'
 import { usePathname } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
-import Logo from '@/assets/Logo.png'
 import { LoginButton } from './LoginButton'
 import MobileNavbar from './MobileNavbar'
 function Navbar() {
-  const [currentTabs, setTabs] = useState(null)
-  const tabRefs = useRef<HTMLAnchorElement[] | null[]>([])
-
   const pathName = usePathname()
   return (
     <header
       className={twMerge(
-        'w-[100vw] xl:px-20 xl:py-6 lg:px-8 lg:py-6 md:py-5 md:px-14 pt-2 px-6 fixed top-0 z-10 flex flex-row items-center justify-between lg:justify-normal lg:border-b border-third navbar-bg',
+        'w-[100vw] xl:px-20 lg:px-8 lg:py-6 md:py-5 md:px-14 pt-6 px-6 fixed top-0 z-10 flex flex-row items-center justify-between lg:justify-normal lg:border-b border-third navbar-bg',
         (pathName == '/' || pathName == '/swap') && 'border-none md:bg-transparent navbar-bg'
       )}>
       <Link href='/' className='flex items-center'>
-        <Image src={Logo} alt='Image' className='w-20' />
         <h1 className='text-primary xl:text-2xl lg:text-base md:text-2xl text-lg font-bold mr-5 lg:w-full uppercase'>
-          Expanding Brain
+          Connect Wallet
         </h1>
       </Link>
       <nav className='lg:flex flex-row text-third xl:text-base items-center text-base font-bold hidden mr-auto'>
