@@ -8,7 +8,7 @@ type ButtonProps = {
 }
 export default function AirdropButton({ children, className, containerClass }: ButtonProps) {
   return (
-    <Link href='/airdrop' className={twMerge('drop-shadow-btn', containerClass)}>
+    <Link href='/swap' className={twMerge('drop-shadow-btn', containerClass)}>
       <button
         className={twMerge(
           `py-2 px-16 rounded-lg bg-primary font-bold button-clipPath hover:bg-white transition-colors xl:text-base tracking-wide`,

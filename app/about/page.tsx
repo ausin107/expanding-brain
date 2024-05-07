@@ -74,9 +74,9 @@ function About() {
       <section className='w-full flex items-center justify-center'>
         <div className='md:bg-black rounded-xl xl:py-12 xl:px-24 lg:py-8 lg:px-24 md:py-8 md:px-24 px-4 py-6 flex items-center flex-col'>
           <h1 className='text-secondary xl:text-4xl lg:text-3xl md:text-2xl xl:md:mb-10 mb-7 lg:mb-7 md:mb-10 font-semibold md:block hidden'>
-            Have you claimed your airdrop yet?
+            Swap for $EXPC token now ?
           </h1>
-          <AirdropButton className='md:mb-8 md:px-16 px-10'>CLAIM YOUR AIRDROP</AirdropButton>
+          <AirdropButton className='md:mb-8 md:px-16 px-10'>SWAP NOW</AirdropButton>
         </div>
       </section>
     </div>

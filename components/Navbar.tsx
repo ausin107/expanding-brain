@@ -29,20 +29,17 @@ function Navbar() {
         <Link href='/' className={twMerge('md:mr-5 hover:text-white', pathName == '/' && 'text-secondary')}>
           HOME
         </Link>
-        <Link
-          href='/airdrop'
-          className={twMerge('md:mr-5 hover:text-white', pathName.includes('/airdrop') && 'text-secondary')}>
-          AIRDROP
-        </Link>
+
         <Link
           href='/about'
           className={twMerge('md:mr-5 hover:text-white', pathName.includes('/about') && 'text-secondary')}>
           ABOUT
         </Link>
-        <Link
-          href=''
-          className={twMerge('md:mr-5 hover:text-white', pathName.includes('/leaderboard') && 'text-secondary')}>
-          LEADERBOARD
+        <Link href='https://twitter.com/' className={twMerge('md:mr-5 hover:text-white')}>
+          TWITTER
+        </Link>
+        <Link href='https://www.telegram.org/' className={twMerge('md:mr-5 hover:text-white')}>
+          TELEGRAM
         </Link>
         <div className='cursor-pointer'>
           <svg viewBox='0 0 24.00 24.00' fill='none' width={24} height={24} xmlns='http://www.w3.org/2000/svg'>
