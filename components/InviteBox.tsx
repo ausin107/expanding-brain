@@ -9,8 +9,8 @@ type inviteBoxProps = {
 }
 
 function InviteBox({
-  title = 'EXPANDING BRAIN AIRDROP',
-  subTitle = 'Check your eligibility to claim airdrop now',
+  title = 'EXPANDING BRAIN',
+  subTitle = 'Swap for $EXPC token to join community now',
   className,
 }: inviteBoxProps) {
   return (
@@ -19,7 +19,7 @@ function InviteBox({
       <p className='text-secondary font-semibold xl:w-4/5 lg:w-full w-4/5 lg:text-center md:text-left md:mb-10 mb-7 xl:text-base lg:text-sm text-lg text-center'>
         {subTitle}
       </p>
-      <AirdropButton className='bg-secondary px-20'>CHECK NOW</AirdropButton>
+      <AirdropButton className='bg-secondary px-20'>SWAP NOW</AirdropButton>
     </div>
   )
 }
