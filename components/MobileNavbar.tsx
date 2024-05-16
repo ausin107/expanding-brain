@@ -133,7 +133,7 @@ function MobileNavbar({ className }: MobileProps) {
           </div>
           <Link
             onClick={handleToggleSidebar}
-            href='/swap'
+            href='/'
             className='md:py-6 md:px-12 py-5 px-8 md:text-xl text-base border-b-2 border-third flex items-center text-yellow-300'>
             CONNECT WALLET
           </Link>

@@ -10,7 +10,7 @@ function Navbar() {
     <header
       className={twMerge(
         'w-[100vw] xl:px-20 lg:px-8 lg:py-6 md:py-5 md:px-14 pt-6 px-6 fixed top-0 z-10 flex flex-row items-center justify-between lg:justify-normal lg:border-b border-third navbar-bg',
-        (pathName == '/' || pathName == '/swap') && 'border-none md:bg-transparent navbar-bg'
+        pathName == '/' && 'border-none md:bg-transparent navbar-bg'
       )}>
       <Link href='/' className='flex items-center'>
         <h1 className='text-primary xl:text-2xl lg:text-base md:text-2xl text-lg font-bold mr-5 lg:w-full uppercase'>
