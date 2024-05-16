@@ -37,11 +37,11 @@ function About() {
           Legal Disclaimers
         </h3>
         <p className='text-third font-bold xl:text-2xl xl:mb-16 md:mb-10 mb-7'>
-          $EXPC is not intended to constitute securities in Panama, Singapore or any relevant jurisdiction, and will not
+          $EXBC is not intended to constitute securities in Panama, Singapore or any relevant jurisdiction, and will not
           entitle token holders to any promise of dividends, revenue, fees, profits or investment returns.
           <br />
           <br />
-          $EXPC is non-refundable and cannot be exchanged for cash (or its equivalent value in any other digital asset)
+          $EXBC is non-refundable and cannot be exchanged for cash (or its equivalent value in any other digital asset)
           or any payment obligation, does not represent any shareholding, ownership, participation, right, title, or
           interest in any entity, is not a representation of money (including electronic money), payment instrument,
           security, commodity, bond, debt instrument, unit in a collective investment or managed investment scheme or
@@ -49,32 +49,32 @@ function About() {
           revenue, fees, profits or investment returns.
           <br />
           <br />
-          $EXPC does not represent any shareholding, participation, right, title, or interest in any entity, enterprise
-          or undertaking. Once issued, it does not appear that holders of $EXPC incur any liability to any entity,
+          $EXBC does not represent any shareholding, participation, right, title, or interest in any entity, enterprise
+          or undertaking. Once issued, it does not appear that holders of $EXBC incur any liability to any entity,
           enterprise or undertaking).
           <br />
           <br />
-          There is no buy-back or destruction mechanism planned for $EXPC.
+          There is no buy-back or destruction mechanism planned for $EXBC.
           <br />
           <br />
-          $EXPC is non-refundable, not redeemable for any assets of any entity or organization, and $EXPC cannot be
+          $EXBC is non-refundable, not redeemable for any assets of any entity or organization, and $EXBC cannot be
           exchanged for cash (or its equivalent value in any other digital asset) or any payment obligation by any
           entity or any affiliate.
           <br />
           <br />
-          $EXPC is not a loan to any entity and there is no expectation of profit nor interest payment.
+          $EXBC is not a loan to any entity and there is no expectation of profit nor interest payment.
           <br />
           <br />
-          Users are acquiring $EXPC to participate in Expanding Brain and to obtain services on the ecosystem thereon.
+          Users are acquiring $EXBC to participate in Expanding Brain and to obtain services on the ecosystem thereon.
           <br />
           <br />
-          $EXPC may have no value and there is no guarantee or representation of value or liquidity for $EXPC.
+          $EXBC may have no value and there is no guarantee or representation of value or liquidity for $EXBC.
         </p>
       </section>
       <section className='w-full flex items-center justify-center'>
         <div className='md:bg-black rounded-xl xl:py-12 xl:px-24 lg:py-8 lg:px-24 md:py-8 md:px-24 px-4 py-6 flex items-center flex-col'>
           <h1 className='text-secondary xl:text-4xl lg:text-3xl md:text-2xl xl:md:mb-10 mb-7 lg:mb-7 md:mb-10 font-semibold md:block hidden'>
-            Swap for $EXPC token now ?
+            Swap for $EXBC token now ?
           </h1>
           <AirdropButton className='md:mb-8 md:px-16 px-10'>SWAP NOW</AirdropButton>
         </div>
